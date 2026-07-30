@@ -219,6 +219,38 @@ td.tt{font-family:var(--serif);font-size:15px}
   transition:all .25s;pointer-events:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 
+/* ---------- cloud + bulk ---------- */
+.syncdot{width:9px;height:9px;border-radius:50%;background:#b9b9a5;display:inline-block;flex:none}
+.syncdot.ok{background:#4b7d3a}
+.syncdot.sync,.syncdot.pending{background:#c79a2e;animation:pulse 1s infinite}
+.syncdot.err{background:#9C4A2E}
+@keyframes pulse{50%{opacity:.35}}
+.cloudgrid{grid-template-columns:1fr 1fr}
+.cloud-note{grid-column:1/-1;font-size:12.5px;color:var(--ink-soft);background:#fbfcf7;border:1px solid var(--moss-line);
+  border-radius:10px;padding:11px 13px;line-height:1.45}
+.cloud-note b{color:var(--moss)}
+.cloud-status{grid-column:1/-1;display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ink-soft);
+  border-top:1px dashed var(--moss-line);padding-top:12px}
+.cloud-status .syncdot{width:11px;height:11px}
+.linklike{background:none;border:0;color:var(--moss);text-decoration:underline;font-size:12.5px;cursor:pointer;padding:0}
+.bulk-drop{grid-column:1/-1;border:1.5px dashed var(--moss);border-radius:12px;background:#fbfcf7;padding:20px;text-align:center;color:var(--ink-soft)}
+.bulk-drop b{color:var(--moss)}
+.bulk-sum{grid-column:1/-1;display:flex;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:600}
+.bulk-sum .m{color:var(--moss)}.bulk-sum .n{color:var(--rust)}.bulk-sum .a{color:#b07d1f}
+.bulk-list{grid-column:1/-1;max-height:280px;overflow:auto;border:1.5px solid var(--moss-line);border-radius:10px}
+.bulk-list table{min-width:0;font-size:13px}
+.bulk-list td{padding:7px 10px;border-top:1px solid var(--paper-3)}
+.bulk-list .tag{font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 7px;border-radius:6px;white-space:nowrap}
+.bulk-list .tag.m{background:var(--moss);color:#fff}
+.bulk-list .tag.n{background:#f0e2da;color:var(--rust)}
+.bulk-list .tag.a{background:#f3ead4;color:#8a6410}
+.progress{grid-column:1/-1;display:none}
+.progress.on{display:block}
+.progress .ptrack{height:10px;background:var(--paper-3);border-radius:6px;overflow:hidden}
+.progress .pfill{height:100%;background:var(--moss);width:0;transition:width .2s}
+.progress .plabel{font-size:12px;color:var(--ink-soft);margin-top:6px;font-family:var(--mono)}
+@media(max-width:560px){.cloudgrid{grid-template-columns:1fr}}
+
 @media(max-width:560px){
   .mbody{grid-template-columns:1fr}
   .ownedbox{grid-template-columns:1fr}
@@ -240,6 +272,11 @@ td.tt{font-family:var(--serif);font-size:15px}
       </div>
     </div>
     <div class="mast-actions">
+      <button class="btn ghost" id="btnCloud" title="Sincronizar com o GitHub"><span id="syncDot" class="syncdot off"></span> Nuvem</button>
+      <button class="btn ghost" id="btnBulk" title="Enviar capas em massa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+        Capas
+      </button>
       <button class="btn ghost" id="btnExportTxt" title="Exportar lista de desejos em texto">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
         Wishlist .txt
@@ -377,6 +414,62 @@ td.tt{font-family:var(--serif);font-size:15px}
   </div>
 </div>
 
+<!-- cloud modal -->
+<div class="overlay" id="cloudOverlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="mh">
+      <h3>Sincronizar com o GitHub</h3>
+      <button class="x" id="cloudClose">×</button>
+    </div>
+    <div class="mbody cloudgrid">
+      <div class="cloud-note" id="cloudIntro">
+        Isso salva sua coleção <b>de volta no seu repositório</b>, então ela fica igual em qualquer aparelho. Você precisa de um <b>token</b> do GitHub (uma chave de acesso limitada). <button class="linklike" id="howToken">Como gerar o token →</button>
+      </div>
+      <div class="fld half"><label>Usuário / organização</label><input type="text" id="c_owner" placeholder="seu-usuario"></div>
+      <div class="fld half"><label>Repositório</label><input type="text" id="c_repo" placeholder="gibiteca"></div>
+      <div class="fld half"><label>Branch</label><input type="text" id="c_branch" placeholder="main"></div>
+      <div class="fld half"><label>Arquivo de dados</label><input type="text" id="c_path" placeholder="data/gibiteca.json"></div>
+      <div class="fld full"><label>Token de acesso</label><input type="text" id="c_token" placeholder="github_pat_… ou ghp_…" autocomplete="off" spellcheck="false"></div>
+      <div class="cloud-note" id="tokenHelp" style="display:none">
+        <b>Passo a passo:</b> 1) Acesse <b>github.com/settings/tokens</b> → <b>Fine-grained tokens</b> → <b>Generate new token</b>. 2) Em <b>Repository access</b>, escolha <b>Only select repositories</b> e marque o seu repositório da gibiteca. 3) Em <b>Permissions → Repository permissions</b>, ache <b>Contents</b> e mude para <b>Read and write</b>. 4) Gere, copie o token e cole aqui. <br>Guarde o token: o GitHub só mostra uma vez. Se vazar, você pode revogar na mesma página.
+      </div>
+      <div class="cloud-status" id="cloudStatus"><span class="syncdot off"></span> Não conectado.</div>
+    </div>
+    <div class="mfoot">
+      <button class="btn del" id="cloudDisconnect" style="display:none;margin-right:auto">Desconectar</button>
+      <button class="btn ghost" id="cloudPull" style="display:none">Puxar da nuvem</button>
+      <button class="btn ghost" id="cloudPush" style="display:none">Enviar agora</button>
+      <button class="btn primary" id="cloudConnect">Conectar</button>
+    </div>
+  </div>
+</div>
+
+<!-- bulk covers modal -->
+<div class="overlay" id="bulkOverlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="mh">
+      <h3>Capas em massa</h3>
+      <button class="x" id="bulkClose">×</button>
+    </div>
+    <div class="mbody">
+      <div class="cloud-note">
+        Selecione várias imagens de uma vez. Cada arquivo é associado à obra cujo <b>título é igual ao nome do arquivo</b> (sem a extensão). Ex.: <b>Watchmen.jpg</b> → obra "Watchmen"; <b>Bouncer — Vol. 1.png</b> → o volume 1. Acentos e maiúsculas não importam. As imagens vão para a pasta <b>covers/</b> do seu repositório.
+      </div>
+      <div class="bulk-drop" id="bulkDrop">
+        <b>Escolher imagens</b> ou arraste os arquivos aqui<br><span style="font-size:12px">JPG, PNG, WebP…</span>
+        <input type="file" id="bulkFiles" accept="image/*" multiple style="display:none">
+      </div>
+      <div class="bulk-sum" id="bulkSum" style="display:none"></div>
+      <div class="bulk-list" id="bulkList" style="display:none"></div>
+      <div class="progress" id="bulkProgress"><div class="ptrack"><div class="pfill" id="bulkFill"></div></div><div class="plabel" id="bulkLabel"></div></div>
+    </div>
+    <div class="mfoot">
+      <button class="btn ghost" id="bulkCancel">Fechar</button>
+      <button class="btn primary" id="bulkSend" disabled>Enviar capas</button>
+    </div>
+  </div>
+</div>
+
 <datalist id="dlEditoras"></datalist>
 <datalist id="dlAutores"></datalist>
 <datalist id="dlPaises"></datalist>
@@ -397,14 +490,20 @@ let editingId = null;
 let editorDraft = { img:'', imgMode:'link', urg:0, status:'wishlist', lido:0, nota:0 };
 
 /* ---------- persistence ---------- */
+const CLOUD_KEY='gibiteca_cloud';
+let cloud={connected:false,owner:'',repo:'',branch:'main',path:'data/gibiteca.json',token:'',sha:null,coverBase:'covers'};
+function loadCloud(){ try{ const r=localStorage.getItem(CLOUD_KEY); if(r) cloud=Object.assign(cloud,JSON.parse(r)); }catch(e){} }
+function saveCloud(){ try{ localStorage.setItem(CLOUD_KEY, JSON.stringify(cloud)); }catch(e){} }
+
 function load(){
   let raw=null; try{ raw=localStorage.getItem(LS_KEY);}catch(e){}
   if(raw){ try{ const d=JSON.parse(raw); state.obras=d.obras||[]; state.editoras=d.editoras||[]; return; }catch(e){} }
   state.obras = SEED.obras.map(o=>({...o}));
   state.editoras = SEED.editoras.slice();
-  save();
+  persistLocal();
 }
-function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify({obras:state.obras,editoras:state.editoras})); }catch(e){ toast('Não foi possível salvar (armazenamento cheio ou bloqueado).'); } }
+function persistLocal(){ try{ localStorage.setItem(LS_KEY, JSON.stringify({obras:state.obras,editoras:state.editoras})); }catch(e){ toast('Não foi possível salvar localmente (armazenamento cheio ou bloqueado).'); } }
+function save(){ persistLocal(); if(cloud.connected) scheduleCloudPush(); }
 
 /* ---------- helpers ---------- */
 const $ = s=>document.querySelector(s);
@@ -746,8 +845,177 @@ function bind(){
   ['#e_nome','#e_edBR','#e_vol'].forEach(id=>$(id).addEventListener('input',checkDup));
 }
 
+/* ================= CLOUD (GitHub) ================= */
+const GH='https://api.github.com';
+function ghHeaders(){ return {Authorization:'Bearer '+cloud.token, Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}; }
+function b64enc(str){ return btoa(unescape(encodeURIComponent(str))); }
+function b64dec(b64){ return decodeURIComponent(escape(atob((b64||'').replace(/\s/g,'')))); }
+function canon(s){ return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim(); }
+function slugify(s){ return (s||'obra').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'obra'; }
+function readDataURL(f){ return new Promise((res,rej)=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.onerror=rej; r.readAsDataURL(f); }); }
+
+const SYNC_TXT={off:'Não conectado.',ok:'Tudo sincronizado.',sync:'Sincronizando…',pending:'Alterações pendentes…',err:'Erro de sincronização.'};
+function setSync(kind){
+  ['#syncDot'].forEach(id=>{ const d=$(id); if(d) d.className='syncdot '+kind; });
+  const s=$('#cloudStatus'); if(s) s.innerHTML=`<span class="syncdot ${kind}"></span> ${SYNC_TXT[kind]||''}`;
+}
+async function ghGet(path){
+  const r=await fetch(`${GH}/repos/${cloud.owner}/${cloud.repo}/contents/${encodeURIComponent(path).replace(/%2F/g,'/')}?ref=${encodeURIComponent(cloud.branch)}`,{headers:ghHeaders(),cache:'no-store'});
+  if(r.status===404) return null;
+  if(!r.ok) throw new Error('GET '+r.status);
+  return r.json();
+}
+async function ghPut(path,contentB64,message,sha){
+  const body={message,content:contentB64,branch:cloud.branch}; if(sha) body.sha=sha;
+  const r=await fetch(`${GH}/repos/${cloud.owner}/${cloud.repo}/contents/${encodeURIComponent(path).replace(/%2F/g,'/')}`,
+    {method:'PUT',headers:{...ghHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
+  if(!r.ok){ let t=''; try{t=(await r.json()).message||'';}catch(e){} throw new Error('PUT '+r.status+(t?' — '+t:'')); }
+  return r.json();
+}
+async function pullFromCloud(){
+  setSync('sync');
+  try{
+    const f=await ghGet(cloud.path);
+    if(!f){ setSync('ok'); return false; }
+    cloud.sha=f.sha; saveCloud();
+    const data=JSON.parse(b64dec(f.content));
+    if(Array.isArray(data.obras)){ state.obras=data.obras; state.editoras=data.editoras||state.editoras; persistLocal(); refreshOptions(); render(); }
+    setSync('ok'); return true;
+  }catch(e){ setSync('err'); toast('Falha ao puxar: '+e.message); return false; }
+}
+let pushTimer=null, pushing=false, pushAgain=false;
+function scheduleCloudPush(){ setSync('pending'); clearTimeout(pushTimer); pushTimer=setTimeout(()=>pushToCloud(),1500); }
+async function pushToCloud(){
+  if(!cloud.connected) return;
+  if(pushing){ pushAgain=true; return; }
+  pushing=true; setSync('sync');
+  try{
+    const json=JSON.stringify({version:1,updated:new Date().toISOString(),obras:state.obras,editoras:state.editoras},null,1);
+    const b64=b64enc(json);
+    try{ const res=await ghPut(cloud.path,b64,'Atualiza coleção — '+new Date().toLocaleString('pt-BR'),cloud.sha); cloud.sha=res.content.sha; }
+    catch(e){ const f=await ghGet(cloud.path); cloud.sha=f?f.sha:null; const res=await ghPut(cloud.path,b64,'Atualiza coleção (retry)',cloud.sha); cloud.sha=res.content.sha; }
+    saveCloud(); setSync('ok');
+  }catch(e){ setSync('err'); toast('Falha ao salvar na nuvem: '+e.message); }
+  pushing=false; if(pushAgain){ pushAgain=false; scheduleCloudPush(); }
+}
+function guessRepo(){ const m=location.hostname.match(/^([^.]+)\.github\.io$/); if(!m) return {owner:'',repo:''};
+  const seg=location.pathname.split('/').filter(Boolean)[0]; return {owner:m[1], repo:seg||(m[1]+'.github.io')}; }
+function updateCloudUI(){
+  if(!cloud.owner||!cloud.repo){ const g=guessRepo(); cloud.owner=cloud.owner||g.owner; cloud.repo=cloud.repo||g.repo; }
+  $('#c_owner').value=cloud.owner; $('#c_repo').value=cloud.repo; $('#c_branch').value=cloud.branch||'main';
+  $('#c_path').value=cloud.path||'data/gibiteca.json'; $('#c_token').value=cloud.token||'';
+  const on=cloud.connected;
+  $('#cloudConnect').textContent=on?'Reconectar':'Conectar';
+  $('#cloudDisconnect').style.display=on?'inline-flex':'none';
+  $('#cloudPull').style.display=on?'inline-flex':'none';
+  $('#cloudPush').style.display=on?'inline-flex':'none';
+  setSync(on?'ok':'off');
+}
+function openCloud(){ updateCloudUI(); $('#cloudOverlay').classList.add('on'); }
+function closeCloud(){ $('#cloudOverlay').classList.remove('on'); }
+async function connectCloud(){
+  cloud.owner=$('#c_owner').value.trim(); cloud.repo=$('#c_repo').value.trim();
+  cloud.branch=$('#c_branch').value.trim()||'main'; cloud.path=$('#c_path').value.trim()||'data/gibiteca.json';
+  cloud.token=$('#c_token').value.trim();
+  if(!cloud.owner||!cloud.repo||!cloud.token){ toast('Preencha usuário, repositório e token.'); return; }
+  setSync('sync');
+  try{
+    const r=await fetch(`${GH}/repos/${cloud.owner}/${cloud.repo}`,{headers:ghHeaders()});
+    if(!r.ok) throw new Error(r.status===401?'Token inválido ou sem permissão.':r.status===404?'Repositório não encontrado (confira usuário/nome).':'Erro '+r.status+'.');
+    cloud.connected=true; cloud.sha=null; saveCloud();
+    const pulled=await pullFromCloud();
+    if(!pulled) await pushToCloud();      // cria o arquivo com o que você já tem
+    updateCloudUI(); toast('Nuvem conectada. Coleção sincronizada.');
+  }catch(e){ cloud.connected=false; saveCloud(); setSync('err'); toast(e.message); updateCloudUI(); }
+}
+function disconnectCloud(){ cloud.connected=false; cloud.token=''; cloud.sha=null; saveCloud(); updateCloudUI(); toast('Nuvem desconectada. Seus dados continuam salvos neste navegador.'); }
+
+/* ================= BULK COVERS ================= */
+let bulkItems=[];
+function openBulk(){
+  if(!cloud.connected){ toast('Conecte a nuvem primeiro para enviar as capas.'); openCloud(); return; }
+  bulkItems=[]; $('#bulkSum').style.display=$('#bulkList').style.display='none';
+  $('#bulkProgress').classList.remove('on'); $('#bulkSend').disabled=true; $('#bulkFiles').value='';
+  $('#bulkOverlay').classList.add('on');
+}
+function closeBulk(){ $('#bulkOverlay').classList.remove('on'); }
+function analyzeBulk(files){
+  const map={}; state.obras.forEach(o=>{ const k=canon(o.nome); (map[k]=map[k]||[]).push(o); });
+  bulkItems=Array.from(files).map(f=>{
+    const base=f.name.replace(/\.[^.]+$/,''); const arr=map[canon(base)]||[];
+    let status='none',work=null;
+    if(arr.length===1){status='match';work=arr[0];}
+    else if(arr.length>1){status='ambig';}
+    return {file:f,base,status,work,matches:arr.length};
+  });
+  renderBulkPreview();
+}
+function renderBulkPreview(){
+  const m=bulkItems.filter(i=>i.status==='match').length;
+  const n=bulkItems.filter(i=>i.status==='none').length;
+  const a=bulkItems.filter(i=>i.status==='ambig').length;
+  $('#bulkSum').style.display='flex';
+  $('#bulkSum').innerHTML=`<span class="m">✓ ${m} associada(s)</span>`+(a?`<span class="a">? ${a} ambígua(s)</span>`:'')+(n?`<span class="n">✕ ${n} sem correspondência</span>`:'');
+  const rows=bulkItems.map(i=>{
+    const tag=i.status==='match'?'<span class="tag m">Associada</span>':i.status==='ambig'?`<span class="tag a">Ambígua (${i.matches})</span>`:'<span class="tag n">Sem par</span>';
+    const to=i.status==='match'?esc(i.work.nome):i.status==='ambig'?'vários títulos iguais — ajuste manualmente':'—';
+    return `<tr><td>${tag}</td><td>${esc(i.file.name)}</td><td style="color:var(--ink-soft)">${to}</td></tr>`;
+  }).join('');
+  $('#bulkList').style.display='block';
+  $('#bulkList').innerHTML=`<table><tbody>${rows}</tbody></table>`;
+  $('#bulkSend').disabled = m===0;
+  $('#bulkSend').textContent = m?`Enviar ${m} capa(s)`:'Enviar capas';
+}
+async function sendBulk(){
+  const todo=bulkItems.filter(i=>i.status==='match');
+  if(!todo.length) return;
+  $('#bulkSend').disabled=true; $('#bulkCancel').disabled=true;
+  $('#bulkProgress').classList.add('on');
+  let done=0, fail=0;
+  for(const it of todo){
+    $('#bulkLabel').textContent=`Enviando ${done+1}/${todo.length} — ${it.file.name}`;
+    try{
+      const dataURL=await readDataURL(it.file);
+      const b64=dataURL.split(',')[1];
+      const ext=(it.file.name.match(/\.([a-zA-Z0-9]+)$/)?.[1]||'jpg').toLowerCase();
+      const path=`${cloud.coverBase}/${slugify(it.work.nome)}-${it.work.id}.${ext}`;
+      let sha=null; try{ const ex=await ghGet(path); if(ex) sha=ex.sha; }catch(e){}
+      await ghPut(path,b64,'Capa: '+it.work.nome,sha);
+      it.work.imagem=`https://raw.githubusercontent.com/${cloud.owner}/${cloud.repo}/${cloud.branch}/${path}`;
+    }catch(e){ fail++; }
+    done++; $('#bulkFill').style.width=Math.round(done/todo.length*100)+'%';
+  }
+  persistLocal(); scheduleCloudPush(); refreshOptions(); render();
+  $('#bulkLabel').textContent=`Concluído: ${done-fail} enviada(s)`+(fail?`, ${fail} com erro`:'')+'.';
+  $('#bulkCancel').disabled=false;
+  toast(`${done-fail} capa(s) enviada(s).`+(fail?` ${fail} falharam.`:''));
+}
+
+function bindCloud(){
+  $('#btnCloud').onclick=openCloud;
+  $('#cloudClose').onclick=closeCloud;
+  $('#cloudOverlay').onclick=e=>{ if(e.target===$('#cloudOverlay')) closeCloud(); };
+  $('#cloudConnect').onclick=connectCloud;
+  $('#cloudDisconnect').onclick=disconnectCloud;
+  $('#cloudPull').onclick=async()=>{ if(confirm('Puxar a versão da nuvem? Substitui o que está neste navegador.')){ await pullFromCloud(); toast('Coleção atualizada da nuvem.'); } };
+  $('#cloudPush').onclick=()=>{ pushToCloud(); toast('Enviando para a nuvem…'); };
+  $('#howToken').onclick=()=>{ const h=$('#tokenHelp'); h.style.display=h.style.display==='none'?'block':'none'; };
+
+  $('#btnBulk').onclick=openBulk; $('#bulkClose').onclick=$('#bulkCancel').onclick=closeBulk;
+  $('#bulkOverlay').onclick=e=>{ if(e.target===$('#bulkOverlay')) closeBulk(); };
+  $('#bulkDrop').onclick=()=>$('#bulkFiles').click();
+  $('#bulkFiles').onchange=e=>{ if(e.target.files.length) analyzeBulk(e.target.files); };
+  $('#bulkDrop').addEventListener('dragover',e=>{e.preventDefault();$('#bulkDrop').style.background='#f2f5ea';});
+  $('#bulkDrop').addEventListener('dragleave',()=>$('#bulkDrop').style.background='');
+  $('#bulkDrop').addEventListener('drop',e=>{ e.preventDefault(); $('#bulkDrop').style.background='';
+    const imgs=Array.from(e.dataTransfer.files).filter(f=>f.type.startsWith('image/')); if(imgs.length) analyzeBulk(imgs); });
+  $('#bulkSend').onclick=sendBulk;
+}
+
 /* ---------- boot ---------- */
-load(); bind(); refreshOptions(); render();
+load(); loadCloud(); bind(); bindCloud(); refreshOptions(); render();
+if(cloud.connected){ setSync('ok'); pullFromCloud(); } else setSync('off');
+
 </script>
 </body>
 </html>
