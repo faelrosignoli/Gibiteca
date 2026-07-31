@@ -8306,21 +8306,37 @@
    "volumes": [
     {
      "nome": "Bouncer — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alejandro Jodorowsky",
+     "desenhista": "Francois Boucq",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Bouncer — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alejandro Jodorowsky",
+     "desenhista": "Francois Boucq",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Alejandro Jodorowsky",
-   "desenhista": "Francois Boucq",
    "origem": "nacional",
    "editora": "Comix Zone",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8333,21 +8349,37 @@
    "volumes": [
     {
      "nome": "Diário Inquieto de Istambul — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Diário Inquieto de Istambul — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Comix Zone",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8360,29 +8392,61 @@
    "volumes": [
     {
      "nome": "Prisioneiro dos Sonhos — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Prisioneiro dos Sonhos — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Prisioneiro dos Sonhos — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Prisioneiro dos Sonhos — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Comix Zone",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8395,21 +8459,37 @@
    "volumes": [
     {
      "nome": "Smurfs — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Smurfs — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Comix Zone",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8422,21 +8502,37 @@
    "volumes": [
     {
      "nome": "Minha Coisa Favorita É Monstro — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Minha Coisa Favorita É Monstro — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Companhia",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8449,37 +8545,85 @@
    "volumes": [
     {
      "nome": "Estranhos no Paraíso — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Estranhos no Paraíso — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Estranhos no Paraíso — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Estranhos no Paraíso — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Estranhos no Paraíso — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Estranhos no Paraíso — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Terry Moore",
+     "desenhista": "Terry Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Terry Moore",
-   "desenhista": "Terry Moore",
    "origem": "nacional",
    "editora": "Devir",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8492,21 +8636,37 @@
    "volumes": [
     {
      "nome": "Little Nemo — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Little Nemo — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Figura",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8519,21 +8679,37 @@
    "volumes": [
     {
      "nome": "Biblioteca Gaiman — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Biblioteca Gaiman — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Intrínseca",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8546,29 +8722,61 @@
    "volumes": [
     {
      "nome": "Absolute: Caçador de Marte — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Absolute: Caçador de Marte — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Absolute: Caçador de Marte — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Absolute: Caçador de Marte — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Panini",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8581,17 +8789,25 @@
    "volumes": [
     {
      "nome": "Sandman Integral",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Panini",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8604,29 +8820,61 @@
    "volumes": [
     {
      "nome": "Thor, o Deus do Trovão \"jason Aaron\" — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thor, o Deus do Trovão \"jason Aaron\" — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thor, o Deus do Trovão \"jason Aaron\" — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thor, o Deus do Trovão \"jason Aaron\" — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Panini",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8639,21 +8887,37 @@
    "volumes": [
     {
      "nome": "Alack Sinner — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Carlos Sampayo",
+     "desenhista": "Carlos Sampayo",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Alack Sinner — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Carlos Sampayo",
+     "desenhista": "Carlos Sampayo",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Carlos Sampayo",
-   "desenhista": "Carlos Sampayo",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Argentina",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8666,21 +8930,37 @@
    "volumes": [
     {
      "nome": "As Crônicas da Era do Gelo — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jiro Taniguchi",
+     "desenhista": "Jiro Taniguchi",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "As Crônicas da Era do Gelo — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jiro Taniguchi",
+     "desenhista": "Jiro Taniguchi",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Jiro Taniguchi",
-   "desenhista": "Jiro Taniguchi",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8693,29 +8973,61 @@
    "volumes": [
     {
      "nome": "Beasts Of Burden — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Evan Dorkin",
+     "desenhista": "Jill Thompson/Benjamin Dewey",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Beasts Of Burden — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Evan Dorkin",
+     "desenhista": "Jill Thompson/Benjamin Dewey",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Beasts Of Burden — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Evan Dorkin",
+     "desenhista": "Jill Thompson/Benjamin Dewey",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Beasts Of Burden — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Evan Dorkin",
+     "desenhista": "Jill Thompson/Benjamin Dewey",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Evan Dorkin",
-   "desenhista": "Jill Thompson/Benjamin Dewey",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8728,29 +9040,61 @@
    "volumes": [
     {
      "nome": "Blueberry — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blueberry — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blueberry — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blueberry — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Christophe Blain",
-   "desenhista": "Christophe Blain",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8763,29 +9107,61 @@
    "volumes": [
     {
      "nome": "Conan, o Cimério — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Conan, o Cimério — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Conan, o Cimério — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Conan, o Cimério — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8798,25 +9174,49 @@
    "volumes": [
     {
      "nome": "Drunna — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": true,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Drunna — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": true,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Drunna — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": true,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": true,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8829,25 +9229,49 @@
    "volumes": [
     {
      "nome": "Incal — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Incal — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Incal — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8860,21 +9284,37 @@
    "volumes": [
     {
      "nome": "Mais Forte que a Espada — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Mais Forte que a Espada — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Hiroshi Hirata",
-   "desenhista": "Hiroshi Hirata",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8887,25 +9327,49 @@
    "volumes": [
     {
      "nome": "Metabarões — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Metabarões — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Metabarões — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8918,21 +9382,37 @@
    "volumes": [
     {
      "nome": "Na Mente de Sherlock Holmes — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Na Mente de Sherlock Holmes — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8945,21 +9425,37 @@
    "volumes": [
     {
      "nome": "O Eternauta — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Héctor Osterheld",
+     "desenhista": "Francisco Solano López",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Eternauta — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Héctor Osterheld",
+     "desenhista": "Francisco Solano López",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Héctor Osterheld",
-   "desenhista": "Francisco Solano López",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Argentina",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8972,21 +9468,37 @@
    "volumes": [
     {
      "nome": "O Máskara — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "John Arcudi",
+     "desenhista": "John Arcudi",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Máskara — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "John Arcudi",
+     "desenhista": "John Arcudi",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "John Arcudi",
-   "desenhista": "John Arcudi",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -8999,21 +9511,37 @@
    "volumes": [
     {
      "nome": "O Preço da Desonra — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Preço da Desonra — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Hiroshi Hirata",
-   "desenhista": "Hiroshi Hirata",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9026,25 +9554,49 @@
    "volumes": [
     {
      "nome": "Satsuma Gishiden — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Satsuma Gishiden — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Satsuma Gishiden — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hiroshi Hirata",
+     "desenhista": "Hiroshi Hirata",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Hiroshi Hirata",
-   "desenhista": "Hiroshi Hirata",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9057,17 +9609,25 @@
    "volumes": [
     {
      "nome": "Sgt. Kirk",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9080,29 +9640,61 @@
    "volumes": [
     {
      "nome": "Thorgal — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thorgal — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thorgal — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Thorgal — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9115,17 +9707,25 @@
    "volumes": [
     {
      "nome": "XII",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Pipoca e Nanquim",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9138,17 +9738,25 @@
    "volumes": [
     {
      "nome": "Asterix Omnibus",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Record",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9161,29 +9769,61 @@
    "volumes": [
     {
      "nome": "Histórias de Guerra — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Histórias de Guerra — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Histórias de Guerra — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Histórias de Guerra — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Tábula",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9196,17 +9836,25 @@
    "volumes": [
     {
      "nome": "Bone",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "",
+     "desenhista": "",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "",
-   "desenhista": "",
    "origem": "nacional",
    "editora": "Todavia",
    "pais": "",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9219,17 +9867,25 @@
    "volumes": [
     {
      "nome": "Corto Maltese",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Hugo Pratt",
+     "desenhista": "Hugo Pratt",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Hugo Pratt",
-   "desenhista": "Hugo Pratt",
    "origem": "nacional",
    "editora": "Trem Fantasma",
    "pais": "Itália",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9242,21 +9898,37 @@
    "volumes": [
     {
      "nome": "Caravaggio — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Milo Manara",
+     "desenhista": "Milo Manara",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Caravaggio — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Milo Manara",
+     "desenhista": "Milo Manara",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Milo Manara",
-   "desenhista": "Milo Manara",
    "origem": "nacional",
    "editora": "Veneta",
    "pais": "Itália",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9269,41 +9941,97 @@
    "volumes": [
     {
      "nome": "A Liga Extraordinária — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Liga Extraordinária — Vol. 7",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Alan Moore",
-   "desenhista": "Alan Moore",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9316,25 +10044,49 @@
    "volumes": [
     {
      "nome": "Nemo — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Nemo — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Nemo — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alan Moore",
+     "desenhista": "Alan Moore",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Alan Moore",
-   "desenhista": "Alan Moore",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9347,25 +10099,49 @@
    "volumes": [
     {
      "nome": "Todo Incal — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alejandro Jodorowsky",
+     "desenhista": "Moebius/Zoran Janjetov/José Ladrönn",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Todo Incal — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alejandro Jodorowsky",
+     "desenhista": "Moebius/Zoran Janjetov/José Ladrönn",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Todo Incal — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alejandro Jodorowsky",
+     "desenhista": "Moebius/Zoran Janjetov/José Ladrönn",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Alejandro Jodorowsky",
-   "desenhista": "Moebius/Zoran Janjetov/José Ladrönn",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9378,17 +10154,25 @@
    "volumes": [
     {
      "nome": "Safadas",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Alex Varenne",
+     "desenhista": "Alex Varenne",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Alex Varenne",
-   "desenhista": "Alex Varenne",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9401,21 +10185,37 @@
    "volumes": [
     {
      "nome": "Get Jiro! — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Anthony Bourdain",
+     "desenhista": "Anthony Bourdain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Get Jiro! — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Anthony Bourdain",
+     "desenhista": "Anthony Bourdain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Anthony Bourdain",
-   "desenhista": "Anthony Bourdain",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9428,21 +10228,37 @@
    "volumes": [
     {
      "nome": "A Grande Odalisca — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Bastien Vivès",
+     "desenhista": "Bastien Vivès",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Grande Odalisca — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Bastien Vivès",
+     "desenhista": "Bastien Vivès",
+     "ano": "",
+     "status": "biblioteca",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Bastien Vivès",
-   "desenhista": "Bastien Vivès",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
+   "status": "wishlist",
    "urgencia": false,
-   "status": "biblioteca",
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9455,49 +10271,121 @@
    "volumes": [
     {
      "nome": "Saga — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 7",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 8",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Saga — Vol. 9",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Brian K. Vaughan",
-   "desenhista": "Brian K. Vaughan",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9510,37 +10398,85 @@
    "volumes": [
     {
      "nome": "Paper Girls — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Paper Girls — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Paper Girls — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Paper Girls — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Paper Girls — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Paper Girls — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Brian K. Vaughan",
-   "desenhista": "Brian K. Vaughan",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9553,17 +10489,25 @@
    "volumes": [
     {
      "nome": "Y: O Último Homem",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Brian K. Vaughan",
+     "desenhista": "Brian K. Vaughan",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Brian K. Vaughan",
-   "desenhista": "Brian K. Vaughan",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9576,29 +10520,61 @@
    "volumes": [
     {
      "nome": "Gus — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gus — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gus — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gus — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Christophe Blain",
+     "desenhista": "Christophe Blain",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Christophe Blain",
-   "desenhista": "Christophe Blain",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9611,37 +10587,85 @@
    "volumes": [
     {
      "nome": "Pequenos Guardiões — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Pequenos Guardiões — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Pequenos Guardiões — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Pequenos Guardiões — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Pequenos Guardiões — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Pequenos Guardiões — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "David Peterson",
+     "desenhista": "David Peterson",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "David Peterson",
-   "desenhista": "David Peterson",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9654,25 +10678,49 @@
    "volumes": [
     {
      "nome": "Torpedo 1936 — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Enrique Sánchez",
+     "desenhista": "Jordi Bernet",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Torpedo 1936 — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Enrique Sánchez",
+     "desenhista": "Jordi Bernet",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Torpedo 1936 — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Enrique Sánchez",
+     "desenhista": "Jordi Bernet",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Enrique Sánchez",
-   "desenhista": "Jordi Bernet",
    "origem": "importado",
    "editora": "",
    "pais": "Espanha",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9685,29 +10733,61 @@
    "volumes": [
     {
      "nome": "Aâma — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Frederik Peeters",
+     "desenhista": "Frederik Peeters",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Aâma — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Frederik Peeters",
+     "desenhista": "Frederik Peeters",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Aâma — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Frederik Peeters",
+     "desenhista": "Frederik Peeters",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Aâma — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Frederik Peeters",
+     "desenhista": "Frederik Peeters",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Frederik Peeters",
-   "desenhista": "Frederik Peeters",
    "origem": "importado",
    "editora": "",
    "pais": "Suíça",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9720,21 +10800,37 @@
    "volumes": [
     {
      "nome": "Valentina — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Guido Crepax",
+     "desenhista": "Guido Crepax",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Valentina — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Guido Crepax",
+     "desenhista": "Guido Crepax",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Guido Crepax",
-   "desenhista": "Guido Crepax",
    "origem": "importado",
    "editora": "",
    "pais": "Itália",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9747,37 +10843,85 @@
    "volumes": [
     {
      "nome": "Boa Noite Punpun — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Boa Noite Punpun — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Boa Noite Punpun — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Boa Noite Punpun — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Boa Noite Punpun — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Boa Noite Punpun — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Inio Asano",
+     "desenhista": "Inio Asano",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Inio Asano",
-   "desenhista": "Inio Asano",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9790,25 +10934,49 @@
    "volumes": [
     {
      "nome": "Sweet Tooth — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Sweet Tooth — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Sweet Tooth — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Jeff Lemire",
-   "desenhista": "Jeff Lemire",
    "origem": "importado",
    "editora": "",
    "pais": "Canadá",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9821,37 +10989,85 @@
    "volumes": [
     {
      "nome": "Gideon Falls — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gideon Falls — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gideon Falls — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gideon Falls — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gideon Falls — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Gideon Falls — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Jeff Lemire",
-   "desenhista": "Jeff Lemire",
    "origem": "importado",
    "editora": "",
    "pais": "Canadá",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9864,21 +11080,37 @@
    "volumes": [
     {
      "nome": "Descender — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Descender — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Jeff Lemire",
+     "desenhista": "Jeff Lemire",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Jeff Lemire",
-   "desenhista": "Jeff Lemire",
    "origem": "importado",
    "editora": "",
    "pais": "Canadá",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9891,33 +11123,73 @@
    "volumes": [
     {
      "nome": "Locke & Key — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Joe Hill",
+     "desenhista": "Joe Hill",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Locke & Key — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Joe Hill",
+     "desenhista": "Joe Hill",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Locke & Key — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Joe Hill",
+     "desenhista": "Joe Hill",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Locke & Key — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Joe Hill",
+     "desenhista": "Joe Hill",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Locke & Key — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Joe Hill",
+     "desenhista": "Joe Hill",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Joe Hill",
-   "desenhista": "Joe Hill",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9930,33 +11202,73 @@
    "volumes": [
     {
      "nome": "Blacksad — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Juan Diáz Canales",
+     "desenhista": "Juan Diáz Canales",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blacksad — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Juan Diáz Canales",
+     "desenhista": "Juan Diáz Canales",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blacksad — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Juan Diáz Canales",
+     "desenhista": "Juan Diáz Canales",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blacksad — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Juan Diáz Canales",
+     "desenhista": "Juan Diáz Canales",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Blacksad — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Juan Diáz Canales",
+     "desenhista": "Juan Diáz Canales",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Juan Diáz Canales",
-   "desenhista": "Juan Diáz Canales",
    "origem": "importado",
    "editora": "",
    "pais": "Espanha",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9969,17 +11281,25 @@
    "volumes": [
     {
      "nome": "Elric",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Julien Blondel",
+     "desenhista": "Jean-Luc Cano/Didier Poli",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Julien Blondel",
-   "desenhista": "Jean-Luc Cano/Didier Poli",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -9992,21 +11312,37 @@
    "volumes": [
     {
      "nome": "Tomie — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Junji Ito",
+     "desenhista": "Junji Ito",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tomie — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Junji Ito",
+     "desenhista": "Junji Ito",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Junji Ito",
-   "desenhista": "Junji Ito",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10019,25 +11355,49 @@
    "volumes": [
     {
      "nome": "A Lanterna de Nix — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kan Takahama",
+     "desenhista": "Kan Takahama",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Lanterna de Nix — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kan Takahama",
+     "desenhista": "Kan Takahama",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "A Lanterna de Nix — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kan Takahama",
+     "desenhista": "Kan Takahama",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Kan Takahama",
-   "desenhista": "Kan Takahama",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10050,117 +11410,325 @@
    "volumes": [
     {
      "nome": "Lobo Solitário — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 7",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 8",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 9",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 10",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 11",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 12",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 13",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 14",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 15",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 16",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 17",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 18",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 19",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 20",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 21",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 22",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 23",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 24",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 25",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Lobo Solitário — Vol. 26",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Kazuo Kroyke",
+     "desenhista": "Goseki Kojima",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Kazuo Kroyke",
-   "desenhista": "Goseki Kojima",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10173,21 +11741,37 @@
    "volumes": [
     {
      "nome": "O Círculo de Júpiter — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Círculo de Júpiter — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Mark Millar",
-   "desenhista": "Mark Millar",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10200,21 +11784,37 @@
    "volumes": [
     {
      "nome": "O Legado de Júpiter — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Frank Quitely",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Legado de Júpiter — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Frank Quitely",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Mark Millar",
-   "desenhista": "Frank Quitely",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10227,21 +11827,37 @@
    "volumes": [
     {
      "nome": "American Jesus — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "American Jesus — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Mark Millar",
-   "desenhista": "Mark Millar",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10254,21 +11870,37 @@
    "volumes": [
     {
      "nome": "Crononautas — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Crononautas — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Mark Millar",
+     "desenhista": "Mark Millar",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Mark Millar",
-   "desenhista": "Mark Millar",
    "origem": "importado",
    "editora": "",
    "pais": "Reino Unido",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10281,17 +11913,25 @@
    "volumes": [
     {
      "nome": "Criminosos do Sexo",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Matt Fraction",
+     "desenhista": "Chip Zdarsky",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Matt Fraction",
-   "desenhista": "Chip Zdarsky",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10304,37 +11944,85 @@
    "volumes": [
     {
      "nome": "Copra — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Copra — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Copra — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Copra — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Copra — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Copra — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Michel Fiffe",
+     "desenhista": "Michel Fiffe",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Michel Fiffe",
-   "desenhista": "Michel Fiffe",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10347,37 +12035,85 @@
    "volumes": [
     {
      "nome": "O Mundo de Edena — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Mundo de Edena — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Mundo de Edena — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Mundo de Edena — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Mundo de Edena — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "O Mundo de Edena — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Moebius",
+     "desenhista": "Moebius",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Moebius",
-   "desenhista": "Moebius",
    "origem": "importado",
    "editora": "",
    "pais": "França",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10390,21 +12126,37 @@
    "volumes": [
     {
      "nome": "Recado a Adolf — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Osamu Tezuka",
+     "desenhista": "Osamu Tezuka",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Recado a Adolf — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Osamu Tezuka",
+     "desenhista": "Osamu Tezuka",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Osamu Tezuka",
-   "desenhista": "Osamu Tezuka",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10417,25 +12169,49 @@
    "volumes": [
     {
      "nome": "Druuna — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Paolo Serpieri",
+     "desenhista": "Paolo Serpieri",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Druuna — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Paolo Serpieri",
+     "desenhista": "Paolo Serpieri",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Druuna — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Paolo Serpieri",
+     "desenhista": "Paolo Serpieri",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Paolo Serpieri",
-   "desenhista": "Paolo Serpieri",
    "origem": "importado",
    "editora": "",
    "pais": "Itália",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10448,37 +12224,85 @@
    "volumes": [
     {
      "nome": "Tartaruga Ninja — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tartaruga Ninja — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tartaruga Ninja — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tartaruga Ninja — Vol. 4",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tartaruga Ninja — Vol. 5",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Tartaruga Ninja — Vol. 6",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Peter Laird",
+     "desenhista": "Kevin Eastman",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Peter Laird",
-   "desenhista": "Kevin Eastman",
    "origem": "importado",
    "editora": "",
    "pais": "EUA",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10491,21 +12315,37 @@
    "volumes": [
     {
      "nome": "Jeremias — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Rafael Calça",
+     "desenhista": "Jefferson Costa",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Jeremias — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Rafael Calça",
+     "desenhista": "Jefferson Costa",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Rafael Calça",
-   "desenhista": "Jefferson Costa",
    "origem": "importado",
    "editora": "",
    "pais": "Brasil",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10518,25 +12358,49 @@
    "volumes": [
     {
      "nome": "Sunny — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Taiyo Matsumoto",
+     "desenhista": "Taiyo Matsumoto",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Sunny — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Taiyo Matsumoto",
+     "desenhista": "Taiyo Matsumoto",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Sunny — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Taiyo Matsumoto",
+     "desenhista": "Taiyo Matsumoto",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Taiyo Matsumoto",
-   "desenhista": "Taiyo Matsumoto",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10549,21 +12413,37 @@
    "volumes": [
     {
      "nome": "Ping Pong — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Taiyo Matsumoto",
+     "desenhista": "Taiyo Matsumoto",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Ping Pong — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Taiyo Matsumoto",
+     "desenhista": "Taiyo Matsumoto",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Taiyo Matsumoto",
-   "desenhista": "Taiyo Matsumoto",
    "origem": "importado",
    "editora": "",
    "pais": "Japão",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
@@ -10576,25 +12456,49 @@
    "volumes": [
     {
      "nome": "Turma da Mônica — Vol. 1",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Vitor Cafaggi",
+     "desenhista": "Lu Cafaggi",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Turma da Mônica — Vol. 2",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Vitor Cafaggi",
+     "desenhista": "Lu Cafaggi",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     },
     {
      "nome": "Turma da Mônica — Vol. 3",
-     "imagem": null
+     "imagem": null,
+     "roteirista": "Vitor Cafaggi",
+     "desenhista": "Lu Cafaggi",
+     "ano": "",
+     "status": "wishlist",
+     "urgencia": false,
+     "valorPago": 0,
+     "lido": false,
+     "nota": 0
     }
    ],
-   "roteirista": "Vitor Cafaggi",
-   "desenhista": "Lu Cafaggi",
    "origem": "importado",
    "editora": "",
    "pais": "Brasil",
+   "roteirista": "",
+   "desenhista": "",
    "ano": "",
-   "urgencia": false,
    "status": "wishlist",
+   "urgencia": false,
    "valorPago": 0,
    "lido": false,
    "nota": 0
