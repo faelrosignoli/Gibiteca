@@ -78,6 +78,8 @@ main{max-width:1240px;margin:0 auto;padding:20px}
 .viewtoggle{display:inline-flex;border:1.5px solid var(--ink);border-radius:var(--r);overflow:hidden}
 .viewtoggle button{border:0;background:var(--paper);padding:9px 12px;font-size:13px;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;gap:6px}
 .viewtoggle button.on{background:var(--ink);color:var(--paper)}
+.viewtoggle button svg,.segs button svg,.tabsmini button svg{width:17px;height:17px;flex:none}
+button svg{flex:none}
 .toolbtn{padding:11px 15px;font-size:14px}
 .toolbtn.active{background:var(--moss);border-color:var(--moss);color:#fff}
 .fcount{background:#fff;color:var(--moss);font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;
@@ -155,7 +157,7 @@ select,.fbody input,.chk{font-family:inherit;font-size:13px}
 .card{background:#fff;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;position:relative;
   display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .1s ease,box-shadow .15s}
 .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -16px rgba(35,39,28,.5)}
-.cover{aspect-ratio:2/3;position:relative;overflow:hidden;background:var(--paper-2)}
+.cover{aspect-ratio:1/1;position:relative;overflow:hidden;background:var(--paper-2)}
 .cover img{width:100%;height:100%;object-fit:cover;display:block}
 .ph{width:100%;height:100%;display:flex;flex-direction:column;padding:12px;color:#fff;position:relative}
 .ph .pub{font-size:9.5px;text-transform:uppercase;letter-spacing:.14em;opacity:.9}
@@ -198,7 +200,7 @@ thead th{background:var(--ink);color:var(--paper);text-align:left;padding:11px 1
   text-transform:uppercase;letter-spacing:.1em;font-weight:700;position:sticky;top:0}
 tbody td{padding:10px 12px;border-top:1px solid var(--paper-3);vertical-align:middle}
 tbody tr:hover{background:#fbfaf3}
-td .thumb{width:34px;height:50px;border-radius:4px;object-fit:cover;border:1px solid var(--moss-line)}
+td .thumb{width:42px;height:42px;border-radius:6px;object-fit:cover;border:1px solid var(--moss-line)}
 td.tt{font-family:var(--serif);font-size:15px}
 .rowstamp{display:inline-flex;align-items:center;justify-content:center;margin-left:6px;vertical-align:middle;background:var(--rust);color:#fff;border-radius:6px;width:22px;height:22px}
 .rowstamp svg{width:13px;height:13px}
@@ -226,7 +228,8 @@ td.tt{font-family:var(--serif);font-size:15px}
 .fld{display:flex;flex-direction:column;gap:5px}
 .fld label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);font-weight:700}
 .fld input[type=text],.fld input[type=number],.fld select,.fld textarea{
-  padding:10px 12px;border:1.5px solid var(--moss-line);border-radius:9px;background:#fff;font-size:14px;color:var(--ink);width:100%}
+  padding:0 12px;min-height:42px;border:1.5px solid var(--moss-line);border-radius:9px;background:#fff;font-size:14px;color:var(--ink);width:100%}
+.fld textarea{padding:10px 12px}
 .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--moss);box-shadow:0 0 0 3px rgba(94,113,70,.14)}
 .two{display:flex;gap:8px}
 .dupwarn{grid-column:1/-1;display:none;background:#fbeee6;border:1.5px solid var(--rust);color:var(--rust);
@@ -244,10 +247,11 @@ td.tt{font-family:var(--serif);font-size:15px}
 .ownedbox{grid-column:1/-1;border:1.5px solid var(--moss-line);border-radius:12px;padding:14px;background:#fbfcf7;
   display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .ownedbox.hidden{display:none}
-.mfoot{display:flex;gap:10px;align-items:center;padding:16px 20px;border-top:1.5px solid var(--ink)}
+.mfoot{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:16px 20px;border-top:1.5px solid var(--ink)}
+.mfoot .btn{flex:0 1 auto}
 .mfoot .del{margin-right:auto;color:var(--rust);border-color:#e0c3b6}
-.switch{display:inline-flex;border:1.5px solid var(--moss-line);border-radius:9px;overflow:hidden}
-.switch button{border:0;background:#fff;padding:9px 16px;font-size:13px;font-weight:600;color:var(--ink-soft)}
+.switch{display:inline-flex;border:1.5px solid var(--moss-line);border-radius:9px;overflow:hidden;min-height:42px}
+.switch button{border:0;background:#fff;padding:0 16px;font-size:13px;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;justify-content:center}
 .switch button.on{background:var(--moss);color:#fff}
 .switch.urg button.on{background:var(--rust)}
 .switch.tipo{display:flex;width:100%}
@@ -262,7 +266,7 @@ td.tt{font-family:var(--serif);font-size:15px}
 @media(max-width:560px){.multi .children{grid-template-columns:1fr}}
 /* ===== additions ===== */
 .pair2{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
-.urgchk{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--moss-line);border-radius:9px;padding:11px 12px;background:#fff;font-weight:600;color:var(--ink-soft);cursor:pointer;user-select:none}
+.urgchk{display:inline-flex;align-items:center;gap:8px;min-height:42px;border:1.5px solid var(--moss-line);border-radius:9px;padding:0 12px;background:#fff;font-weight:600;color:var(--ink-soft);cursor:pointer;user-select:none}
 .urgchk input{accent-color:var(--rust);width:16px;height:16px}
 .urgchk.on{border-color:var(--rust);color:var(--rust);background:#fbf1ec}
 .urgchk .urgico{margin-left:auto}
@@ -286,19 +290,40 @@ td.tt{font-family:var(--serif);font-size:15px}
 .card .edit{display:none}
 .vols-body{padding:18px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:14px;max-height:70vh;overflow:auto}
 .vol-item{display:flex;flex-direction:column;gap:7px}
-.vol-item .vcover{aspect-ratio:2/3;border-radius:8px;overflow:hidden;border:1.5px solid var(--moss-line);background:var(--paper-2);position:relative}
+.vol-item .vcover{aspect-ratio:1/1;border-radius:8px;overflow:hidden;border:1.5px solid var(--moss-line);background:var(--paper-2);position:relative}
 .vol-item .vcover img{width:100%;height:100%;object-fit:cover;display:block}
 .vol-item .vcover .vph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:24px;color:#fff}
 .vol-item .vnum{position:absolute;top:5px;left:5px;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:9px;padding:1px 5px;border-radius:5px;z-index:2}
 .vol-item .vname{font-family:var(--serif);font-size:12.5px;line-height:1.15;color:var(--ink);text-align:center}
-.multi .children{display:flex;flex-direction:column;gap:9px;margin-top:12px}
-.multi .children .ci{display:flex;gap:9px;align-items:center;background:#fff;border:1.5px solid var(--moss-line);border-radius:9px;padding:8px}
-.multi .children .ci .cthumb{width:40px;height:58px;border-radius:5px;border:1px solid var(--moss-line);background:var(--paper-2);flex:none;overflow:hidden;cursor:pointer;position:relative}
-.multi .children .ci .cthumb img{width:100%;height:100%;object-fit:cover}
-.multi .children .ci .cthumb .cadd{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:8px;color:var(--ink-faint);text-align:center;line-height:1.05;padding:2px}
-.multi .children .ci .cnum{font-family:var(--mono);font-size:12px;color:var(--ink-faint);min-width:22px;text-align:center;flex:none}
-.multi .children .ci input[type=text]{flex:1;padding:9px 11px;border:1.5px solid var(--moss-line);border-radius:8px;font-size:13.5px;background:#fff;color:var(--ink);width:100%}
-.multi .children .ci.nocover .cthumb{display:none}
+.vol-item .vmeta{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;align-items:center}
+.multi-hint{font-size:11.5px;color:var(--ink-faint);margin:8px 0 4px;line-height:1.4}
+.multi .children{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.vp{border:1.5px solid var(--moss-line);border-radius:10px;background:#fff;overflow:hidden}
+.vp-head{display:flex;align-items:center;gap:9px;padding:8px 10px;cursor:pointer;background:#fbfcf7}
+.vp-cover{width:38px;height:38px;border-radius:6px;border:1px solid var(--moss-line);background:var(--paper-2);overflow:hidden;position:relative;flex:none;cursor:pointer}
+.vp-cover img{width:100%;height:100%;object-fit:cover}
+.vp-cover .cadd{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:7.5px;color:var(--ink-faint);text-align:center;line-height:1.05;padding:2px}
+.vp-num{font-family:var(--mono);font-size:12px;color:var(--ink-faint);min-width:16px;text-align:center;flex:none}
+.vp-nome{flex:1;min-width:0;border:1.5px solid var(--moss-line);border-radius:7px;padding:0 10px;height:36px;font-size:13.5px;color:var(--ink);background:#fff}
+.vp-tag{font-size:9px;font-weight:800;text-transform:uppercase;padding:3px 7px;border-radius:5px;flex:none}
+.vp-tag.tenho{background:var(--moss);color:#fff}
+.vp-tag.quero{background:var(--paper-3);color:var(--ink-soft)}
+.vp-chev{font-size:9px;color:var(--ink-faint);flex:none;width:14px;text-align:center}
+.vp-body{padding:11px;display:grid;grid-template-columns:1fr 1fr;gap:11px;border-top:1px solid var(--moss-line)}
+.vp-body .vfull{grid-column:1/-1}
+.vf{display:flex;flex-direction:column;gap:4px}
+.vf-l{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:14px}
+.vf-l label{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-faint);font-weight:700}
+.copyall{font-size:9.5px;color:var(--moss);background:none;border:0;cursor:pointer;text-decoration:underline;white-space:nowrap;padding:0;font-weight:600}
+.vf input[type=text],.vf input[type=number]{height:36px;padding:0 10px;border:1.5px solid var(--moss-line);border-radius:7px;font-size:13px;background:#fff;color:var(--ink);width:100%}
+.vf input:focus{outline:none;border-color:var(--moss)}
+.switch.mini{min-height:36px;width:100%}
+.switch.mini button{padding:0 8px;font-size:12px;flex:1}
+.urgchk.mini{min-height:36px;padding:0 10px;font-size:12px;gap:6px;justify-content:flex-start}
+.editstars.mini{gap:2px}
+.editstars.mini .st{font-size:22px}
+.editstars.mini .clr{font-size:10px;margin-left:6px}
+@media(max-width:560px){.vp-body{grid-template-columns:1fr}}
 .ratehist{padding:16px 18px;border-top:1px solid var(--moss-line)}
 .ratehist h4{margin:0 0 12px;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-faint);font-weight:700}
 .rh-cols{display:flex;align-items:flex-end;gap:5px;height:120px}
@@ -385,6 +410,10 @@ td.tt{font-family:var(--serif);font-size:15px}
   .badge-urg svg{width:13px;height:13px}
   .pill{font-size:8.5px;padding:2px 6px}
   .stars{font-size:11px}
+  .mfoot{gap:8px;padding:14px}
+  .mfoot .btn{flex:1 1 calc(50% - 4px);justify-content:center;padding:11px 8px;font-size:13px}
+  .mfoot .del{margin-right:0}
+  .mfoot .btn.full-row{flex-basis:100%}
 }
 @media(max-width:400px){
   .fbody{grid-template-columns:1fr}
@@ -535,11 +564,13 @@ td.tt{font-family:var(--serif);font-size:15px}
       </div>
       <div class="fld full"><label id="lblTitulo">Título</label><input type="text" id="e_nome" placeholder="Nome da obra"></div>
 
-      <div class="fld full multi" id="multiBox" style="display:none">
-        <label id="lblQtd">Quantidade de volumes</label>
-        <input type="number" id="e_qtd" min="1" max="80" placeholder="ex.: 3" style="max-width:150px">
-        <div class="children" id="e_children"></div>
+      <div class="fld full"><label>Origem</label>
+        <div class="switch origem" id="e_origem"><button type="button" data-v="nacional" class="on">Nacional</button><button type="button" data-v="importado">Importado</button></div>
       </div>
+      <div class="fld half"><label id="lblEditora">Editora no Brasil</label>
+        <input type="text" id="e_editora" list="dlEditoras" placeholder="Nome da editora">
+      </div>
+      <div class="fld half"><label>País</label><input type="text" id="e_pais" list="dlPaises"></div>
 
       <div class="fld full" id="capaField">
         <label>Capa</label>
@@ -556,29 +587,27 @@ td.tt{font-family:var(--serif);font-size:15px}
         </div>
       </div>
 
-      <div class="fld half"><label>Roteirista</label><input type="text" id="e_rot" list="dlAutores"></div>
-      <div class="fld half"><label>Desenhista</label><input type="text" id="e_des" list="dlAutores" placeholder="Use / para dois nomes"></div>
-
-      <div class="fld full"><label>Origem</label>
-        <div class="switch origem" id="e_origem"><button type="button" data-v="nacional" class="on">Nacional</button><button type="button" data-v="importado">Importado</button></div>
-      </div>
-      <div class="fld full"><label id="lblEditora">Editora no Brasil</label>
-        <input type="text" id="e_editora" list="dlEditoras" placeholder="Nome da editora">
+      <div class="fld full multi" id="multiBox" style="display:none">
+        <label id="lblQtd">Quantidade de volumes</label>
+        <input type="number" id="e_qtd" min="1" max="80" placeholder="ex.: 3" style="max-width:150px">
+        <div class="multi-hint">Preencha as informações de cada volume. Cada campo tem “copiar p/ todos” caso o valor se repita.</div>
+        <div class="children" id="e_children"></div>
       </div>
 
-      <div class="fld half"><label>País da obra</label><input type="text" id="e_pais" list="dlPaises"></div>
-      <div class="fld half"><label>Ano</label><input type="number" id="e_ano" placeholder="ex.: 1986"></div>
+      <div class="fld half avulsoOnly"><label>Roteirista</label><input type="text" id="e_rot" list="dlAutores"></div>
+      <div class="fld half avulsoOnly"><label>Desenhista</label><input type="text" id="e_des" list="dlAutores" placeholder="Use / para dois nomes"></div>
+      <div class="fld half avulsoOnly" id="anoField"><label>Ano</label><input type="number" id="e_ano" placeholder="ex.: 1986"></div>
 
-      <div class="full pair2">
-        <div class="fld"><label>Urgência</label>
-          <label class="urgchk" id="e_urgchk"><input type="checkbox" id="e_urg"> <span>Urgente</span> <span class="urgico">⚠️</span></label>
-        </div>
+      <div class="full pair2 avulsoOnly">
         <div class="fld"><label>Status</label>
           <div class="switch" id="e_status"><button type="button" data-v="wishlist" class="on">Quero</button><button type="button" data-v="biblioteca">Tenho</button></div>
         </div>
+        <div class="fld" id="urgFld"><label>Urgência</label>
+          <label class="urgchk" id="e_urgchk"><input type="checkbox" id="e_urg"> <span>Urgente</span> <span class="urgico">⚠️</span></label>
+        </div>
       </div>
 
-      <div class="ownedbox hidden" id="ownedBox">
+      <div class="ownedbox hidden avulsoOnly" id="ownedBox">
         <div class="fld"><label>Valor pago</label><input type="text" id="e_valor" inputmode="numeric" placeholder="R$ 0,00"></div>
         <div class="fld"><label>Lido</label>
           <div class="switch" id="e_lido"><button type="button" data-v="1">Sim</button><button type="button" data-v="0" class="on">Não</button></div>
@@ -621,7 +650,7 @@ td.tt{font-family:var(--serif);font-size:15px}
       <div class="cloud-status" id="cloudStatus"><span class="syncdot off"></span> Não conectado.</div>
     </div>
     <div class="mfoot">
-      <button class="btn del" id="cloudDisconnect" style="display:none;margin-right:auto">Desconectar</button>
+      <button class="btn del" id="cloudDisconnect" style="display:none">Desconectar</button>
       <button class="btn ghost" id="cloudPull" style="display:none">Puxar da nuvem</button>
       <button class="btn ghost" id="cloudPush" style="display:none">Enviar agora</button>
       <button class="btn primary" id="cloudConnect">Conectar</button>
@@ -739,7 +768,10 @@ function nextId(){ return state.obras.reduce((m,o)=>Math.max(m,o.id||0),0)+1; }
 function initials(t){ const w=(t||'?').replace(/[^\p{L}\p{N} ]/gu,'').trim().split(/\s+/).filter(Boolean);
   if(!w.length) return '?'; if(w.length===1) return w[0].slice(0,2).toUpperCase(); return (w[0][0]+w[1][0]).toUpperCase(); }
 function tintFor(s){ let h=0; s=s||''; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return PLACEHOLDER_TINTS[h%PLACEHOLDER_TINTS.length]; }
-function authorsOf(o){ const a=[]; if(o.roteirista) a.push(...o.roteirista.split('/')); if(o.desenhista) o.desenhista.split('/').forEach(d=>{if(d&&!a.includes(d))a.push(d);}); return a.map(x=>x.trim()).filter(Boolean); }
+function authorsOf(o){ const a=[]; const push=(s)=>{ if(s) s.split('/').forEach(x=>{ x=x.trim(); if(x&&!a.includes(x))a.push(x); }); };
+  push(o.roteirista); push(o.desenhista);
+  (Array.isArray(o.volumes)?o.volumes:[]).forEach(v=>{ push(v.roteirista); push(v.desenhista); });
+  return a; }
 /* ---- record helpers (new schema + legacy fallback) ---- */
 function tipoOf(o){ let t=o.tipo; if(t==='avulsa') t='avulso'; return t || (o.serie?'serie':'avulso'); }
 function edOf(o){ return o.editora || o.editoraBR || ''; }
@@ -749,6 +781,14 @@ function volsOf(o){ if(Array.isArray(o.volumes)) return o.volumes;
 function coverOf(o){ const t=tipoOf(o); const v=volsOf(o);
   if(t==='serie'){ if(v[0]&&v[0].imagem) return v[0].imagem; return o.imagem||null; }
   return o.imagem || (v[0]&&v[0].imagem) || null; }
+/* aggregates over the ownable units (avulso = itself; box/série = each volume) */
+function unitsOf(o){ return tipoOf(o)==='avulso' ? [o] : volsOf(o); }
+function ownedCount(o){ return unitsOf(o).filter(u=>u.status==='biblioteca').length; }
+function anyUrg(o){ return unitsOf(o).some(u=>u.urgencia && u.status!=='biblioteca'); }
+function sumValor(o){ return unitsOf(o).reduce((s,u)=>s+(Number(u.valorPago)||0),0); }
+function lidoCount(o){ return unitsOf(o).filter(u=>u.status==='biblioteca'&&u.lido).length; }
+function avgNota(o){ const r=unitsOf(o).filter(u=>Number(u.nota)>0); return r.length? Math.round(r.reduce((s,u)=>s+u.nota,0)/r.length*2)/2 : 0; }
+function statusMatch(o,want){ return unitsOf(o).some(u=>u.status===want); }
 function starsHTML(n){ n=Number(n)||0; let s=''; for(let i=1;i<=5;i++){ const cls=n>=i?'full':(n>=i-0.5?'half':''); s+=`<span class="s ${cls}">★</span>`; } return `<span class="stars">${s}</span>`; }
 
 /* ---------- toast ---------- */
@@ -757,18 +797,18 @@ let toastT; function toast(msg){ const t=$('#toast'); t.textContent=msg; t.class
 /* ---------- filtering ---------- */
 function passes(o){
   const f=state.filters;
-  if(f.status!=='todos' && o.status!==f.status) return false;
+  if(f.status!=='todos' && !statusMatch(o,f.status)) return false;
   if(f.tipo && tipoOf(o)!==f.tipo) return false;
   if(f.editora && edOf(o)!==f.editora) return false;
   if(f.pais && o.pais!==f.pais) return false;
   if(f.autor && !authorsOf(o).includes(f.autor)) return false;
   if(f.importado && !isImp(o)) return false;
-  if(f.urgencia && !o.urgencia) return false;
-  if(f.lido && !o.lido) return false;
-  if(f.naoLido && o.lido) return false;
+  if(f.urgencia && !anyUrg(o)) return false;
+  if(f.lido && !unitsOf(o).some(u=>u.status==='biblioteca'&&u.lido)) return false;
+  if(f.naoLido && !unitsOf(o).some(u=>u.status==='biblioteca'&&!u.lido)) return false;
   if(f.q){
     const q=f.q.toLowerCase();
-    const hay=[o.nome,edOf(o),o.roteirista,o.desenhista,o.pais,volsOf(o).map(v=>v.nome).join(' ')].join(' ').toLowerCase();
+    const hay=[o.nome,edOf(o),o.roteirista,o.desenhista,o.pais,volsOf(o).map(v=>v.nome+' '+(v.roteirista||'')+' '+(v.desenhista||'')).join(' ')].join(' ').toLowerCase();
     if(!hay.includes(q)) return false;
   }
   return true;
@@ -789,15 +829,16 @@ function cmp(a,b){ const ka=sortKey(a),kb=sortKey(b); let r = ka<kb?-1:ka>kb?1:0
 /* ---------- stats ---------- */
 function renderStats(){
   const O=state.obras;
-  const bib=O.filter(o=>o.status==='biblioteca');
-  const wl=O.filter(o=>o.status==='wishlist');
-  const invest=bib.reduce((s,o)=>s+(Number(o.valorPago)||0),0);
-  const paid=bib.filter(o=>Number(o.valorPago)>0);
+  const units=O.flatMap(unitsOf);
+  const owned=units.filter(u=>u.status==='biblioteca');
+  const want=units.filter(u=>u.status!=='biblioteca');
+  const invest=owned.reduce((s,u)=>s+(Number(u.valorPago)||0),0);
+  const paid=owned.filter(u=>Number(u.valorPago)>0);
   const avg=paid.length?invest/paid.length:0;
-  const lidos=bib.filter(o=>o.lido).length;
-  const pctLido=bib.length?Math.round(lidos/bib.length*100):0;
-  const rated=O.filter(o=>Number(o.nota)>0);
-  const notaMed=rated.length?(rated.reduce((s,o)=>s+o.nota,0)/rated.length):0;
+  const lidos=owned.filter(u=>u.lido).length;
+  const pctLido=owned.length?Math.round(lidos/owned.length*100):0;
+  const rated=units.filter(u=>Number(u.nota)>0);
+  const notaMed=rated.length?(rated.reduce((s,u)=>s+u.nota,0)/rated.length):0;
 
   const byEd={}; O.forEach(o=>{ const k=edOf(o)||(isImp(o)?'Importado (s/ editora)':'—'); byEd[k]=(byEd[k]||0)+1; });
   const byPais={}; O.forEach(o=>{ if(o.pais){ byPais[o.pais]=(byPais[o.pais]||0)+1; } });
@@ -806,9 +847,8 @@ function renderStats(){
   const maxE=Math.max(1,...topEd.map(x=>x[1])), maxP=Math.max(1,...topP.map(x=>x[1]));
   const bars=(arr,max)=>arr.map(([nm,v])=>`<div class="bar"><span class="nm">${esc(nm)}</span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="v">${v}</span></div>`).join('');
 
-  // ratings histogram 0.5..5.0
   const buckets=[]; for(let v=0.5; v<=5.0001; v+=0.5) buckets.push(Math.round(v*10)/10);
-  const counts=buckets.map(b=>O.filter(o=>Number(o.nota)===b).length);
+  const counts=buckets.map(b=>units.filter(u=>Number(u.nota)===b).length);
   const maxC=Math.max(1,...counts);
   const cols=buckets.map((b,i)=>{ const c=counts[i]; const h=Math.round(c/maxC*100);
     return `<div class="rh-col"><div class="rh-n">${c||''}</div><div class="rh-bar ${c?'':'zero'}" style="height:${c?h:2}%"></div></div>`; }).join('');
@@ -817,9 +857,9 @@ function renderStats(){
   $('#statsBody').innerHTML = `
     <div class="stats-grid">
       <div class="stat"><div class="n money">${fmtBRL(invest)}</div><div class="l">Investido no acervo</div></div>
-      <div class="stat"><div class="n">${bib.length}</div><div class="l">Tenho</div></div>
-      <div class="stat"><div class="n">${wl.length}</div><div class="l">Quero</div></div>
-      <div class="stat"><div class="n">${pctLido}%</div><div class="l">Lidos (${lidos}/${bib.length})</div></div>
+      <div class="stat"><div class="n">${owned.length}</div><div class="l">Tenho</div></div>
+      <div class="stat"><div class="n">${want.length}</div><div class="l">Quero</div></div>
+      <div class="stat"><div class="n">${pctLido}%</div><div class="l">Lidos (${lidos}/${owned.length})</div></div>
       <div class="stat"><div class="n">${notaMed?notaMed.toFixed(1):'—'}</div><div class="l">Nota média</div></div>
       <div class="stat"><div class="n money">${fmtBRL(avg)}</div><div class="l">Valor médio</div></div>
     </div>
@@ -837,7 +877,7 @@ function renderStats(){
 /* ---------- cards ---------- */
 function coverHTML(o){
   const t=tipoOf(o);
-  const urg = o.urgencia?`<span class="badge-urg" title="Urgente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>`:'';
+  const urg = anyUrg(o)?`<span class="badge-urg" title="Urgente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>`:'';
   let tbadge='';
   if(t==='box') tbadge=`<span class="tbadge box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 8l9-5 9 5-9 5-9-5zM3 8v8l9 5 9-5V8"/></svg>Box ${volsOf(o).length||''}</span>`;
   else if(t==='serie') tbadge=`<span class="tbadge serie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 5h10v14H4zM17 7h3v12h-3"/></svg>Série ${volsOf(o).length||''}</span>`;
@@ -855,17 +895,27 @@ function placeholderStr(id){
 }
 function cardHTML(o){
   const t=tipoOf(o);
-  const statusPill = o.status==='biblioteca' ? '<span class="pill bib">Tenho</span>' : '<span class="pill wl">Quero</span>';
+  const multi = t==='box'||t==='serie';
+  const total = multi ? unitsOf(o).length : 1;
+  const owned = multi ? ownedCount(o) : (o.status==='biblioteca'?1:0);
+  let statusPill;
+  if(multi){
+    statusPill = owned===0 ? '<span class="pill wl">Quero</span>'
+      : owned>=total ? '<span class="pill bib">Tenho</span>'
+      : `<span class="pill bib">Tenho ${owned}/${total}</span>`;
+  } else statusPill = o.status==='biblioteca' ? '<span class="pill bib">Tenho</span>' : '<span class="pill wl">Quero</span>';
   const impPill = isImp(o) ? '<span class="pill imp">Importado</span>' : '';
   let extras='';
-  if(o.status==='biblioteca'){
-    if(o.lido) extras+='<span class="pill lido">Lido</span>';
-    if(o.nota) extras+=starsHTML(o.nota);
-    if(Number(o.valorPago)>0) extras+=`<span class="price">${fmtBRL(o.valorPago)}</span>`;
-  }
+  const val = multi ? sumValor(o) : (o.status==='biblioteca'?Number(o.valorPago)||0:0);
+  const nota = multi ? avgNota(o) : (o.status==='biblioteca'?o.nota:0);
+  const lidos = multi ? lidoCount(o) : (o.status==='biblioteca'&&o.lido?1:0);
+  if(multi){ if(lidos) extras+=`<span class="pill lido">${lidos} lido(s)</span>`; }
+  else if(o.status==='biblioteca'&&o.lido) extras+='<span class="pill lido">Lido</span>';
+  if(nota) extras+=starsHTML(nota);
+  if(val>0) extras+=`<span class="price">${fmtBRL(val)}</span>`;
   const eyebrow = edOf(o) ? `<div class="ed">${esc(edOf(o))}</div>` : '';
   let sub;
-  if(t==='box'||t==='serie'){ const v=volsOf(o); const names=v.map(x=>x.nome).filter(Boolean);
+  if(multi){ const v=volsOf(o); const names=v.map(x=>x.nome).filter(Boolean);
     sub = `${v.length} ${t==='box'?'livro(s)':'volume(s)'}${names.length?': '+esc(names.join(', ')):''}`; }
   else sub = `${esc(o.roteirista||o.desenhista||'—')}${o.ano?' · '+esc(o.ano):''}`;
   return `<div class="card">
@@ -893,26 +943,35 @@ function sortedList(list){
 /* ---------- list view ---------- */
 function listHTML(arr){
   const rows=arr.map(o=>{
+    const t=tipoOf(o); const multi=t==='box'||t==='serie';
     const cov=coverOf(o);
     const thumb = cov?`<img class="thumb" src="${esc(cov)}" alt="">`:`<div class="thumb" style="background:${tintFor(edOf(o)||o.nome)};display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--serif);font-size:11px">${esc(initials(o.nome))}</div>`;
-    const urg = o.urgencia?`<span class="rowstamp" title="Urgente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>`:'';
-    const statusCell = (o.status==='biblioteca'?'<span class="pill bib">Tenho</span>':'<span class="pill wl">Quero</span>') + (isImp(o)?'<span class="pill imp row">Importado</span>':'');
-    const t=tipoOf(o);
+    const urg = anyUrg(o)?`<span class="rowstamp" title="Urgente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>`:'';
+    const total=multi?unitsOf(o).length:1, owned=multi?ownedCount(o):(o.status==='biblioteca'?1:0);
+    const statusLbl = multi ? (owned===0?'<span class="pill wl">Quero</span>':owned>=total?'<span class="pill bib">Tenho</span>':`<span class="pill bib">Tenho ${owned}/${total}</span>`)
+      : (o.status==='biblioteca'?'<span class="pill bib">Tenho</span>':'<span class="pill wl">Quero</span>');
+    const statusCell = statusLbl + (isImp(o)?'<span class="pill imp row">Importado</span>':'');
     const tipoCell = t==='box'?'<span class="tg-box">Box</span>':t==='serie'?`<span class="tg-box" style="background:#3f5a46">Série</span>`:'—';
-    const vN = (t==='box'||t==='serie')?` <span style="color:var(--ink-faint)">${volsOf(o).length}v</span>`:'';
+    const vN = multi?` <span style="color:var(--ink-faint)">${total}v</span>`:'';
+    const rot = multi ? (Array.from(new Set(volsOf(o).map(v=>v.roteirista).filter(Boolean))).join(', ')||'—') : (o.roteirista||'—');
+    const des = multi ? (Array.from(new Set(volsOf(o).map(v=>v.desenhista).filter(Boolean))).join(', ')||'—') : (o.desenhista||'—');
+    const anos = multi ? (Array.from(new Set(volsOf(o).map(v=>v.ano).filter(Boolean))).join(', ')||'—') : (o.ano||'—');
+    const val = multi?sumValor(o):(Number(o.valorPago)>0?Number(o.valorPago):0);
+    const nota = multi?avgNota(o):(o.nota||0);
+    const lidoCell = multi ? (owned?`${lidoCount(o)}/${owned}`:'—') : (o.status==='biblioteca'?(o.lido?'Sim':'Não'):'—');
     return `<tr data-open="${o.id}">
         <td>${thumb}</td>
         <td class="tt">${esc(o.nome)}${urg}</td>
-        <td>${esc(o.roteirista||'—')}</td>
-        <td>${esc(o.desenhista||'—')}</td>
+        <td>${esc(rot)}</td>
+        <td>${esc(des)}</td>
         <td>${esc(edOf(o)||(isImp(o)?'Importado':'—'))}</td>
         <td>${esc(o.pais||'—')}</td>
-        <td>${esc(o.ano||'—')}</td>
+        <td>${esc(anos)}</td>
         <td>${tipoCell}${vN}</td>
         <td>${statusCell}</td>
-        <td>${o.status==='biblioteca'?(o.lido?'Sim':'Não'):'—'}</td>
-        <td>${o.nota?starsHTML(o.nota):'—'}</td>
-        <td>${Number(o.valorPago)>0?fmtBRL(o.valorPago):'—'}</td>
+        <td>${lidoCell}</td>
+        <td>${nota?starsHTML(nota):'—'}</td>
+        <td>${val>0?fmtBRL(val):'—'}</td>
       </tr>`;
   });
   return `<div class="tablewrap"><table><thead><tr>
@@ -981,33 +1040,83 @@ function applyTipoUI(mode){
   $('#e_nome').placeholder = mode==='box'?'Nome do box / coleção':mode==='serie'?'Nome da série':'Nome da obra';
   $('#multiBox').style.display = isMulti?'block':'none';
   $('#lblQtd').textContent = mode==='box'?'Quantidade de livros no box':'Quantidade de volumes';
-  // main cover: shown for avulso and box; hidden for série (covers are per-volume)
-  $('#capaField').style.display = (mode==='serie')?'none':'';
-  if(isMulti) renderChildren($('#e_qtd').value);
+  $('#capaField').style.display = (mode==='serie')?'none':'';         // série: capa é por volume
+  $$('.avulsoOnly').forEach(el=>{ el.style.display = isMulti?'none':''; });
+  if(isMulti){ setVolsCount($('#e_qtd').value || (editorDraft.vols||[]).length); renderVols(); }
 }
-function childrenWord(){ return editorDraft.tipo==='serie'?'Volume':'Livro'; }
-function renderChildren(n,values,covers){
-  n=Math.max(0,Math.min(80,Number(n)||0));
-  values=values||childrenValues(); covers=covers||editorDraft.childCovers||[];
-  editorDraft.childCovers = covers.slice(0,n); while(editorDraft.childCovers.length<n) editorDraft.childCovers.push(null);
-  const w=childrenWord(); const withCover = editorDraft.tipo==='serie';
-  let html='';
-  for(let i=0;i<n;i++){ const v=esc(values[i]!=null?values[i]:'');
-    const cov=editorDraft.childCovers[i];
-    const thumb = withCover ? `<div class="cthumb" data-ci="${i}">${cov?`<img src="${esc(cov)}">`:'<div class="cadd">+ capa</div>'}</div>` : '';
-    html+=`<div class="ci ${withCover?'':'nocover'}">${thumb}<span class="cnum">${i+1}</span><input type="text" value="${v}" placeholder="Título — ${w.toLowerCase()} ${i+1}"></div>`; }
-  $('#e_children').innerHTML=html;
-  if(withCover) $$('#e_children .cthumb').forEach(el=>el.onclick=()=>pickChildCover(Number(el.dataset.ci)));
+
+/* ---- per-volume model ---- */
+function blankVol(i){ return {nome:'Vol. '+(i+1), imagem:null, roteirista:'', desenhista:'', ano:'',
+  status:'wishlist', urgencia:false, valorPago:0, lido:false, nota:0, _open:false}; }
+function normVol(v,i,parent){ return {
+  nome: (v && v.nome!=null) ? v.nome : ('Vol. '+(i+1)),
+  imagem: (v&&v.imagem)||null,
+  roteirista:(v&&v.roteirista)||'', desenhista:(v&&v.desenhista)||'', ano:(v&&v.ano)||'',
+  status:(v&&v.status)|| (parent&&parent.status) || 'wishlist',
+  urgencia:!!(v&&v.urgencia), valorPago:(v&&v.valorPago)||0, lido:!!(v&&v.lido), nota:(v&&v.nota)||0, _open:false }; }
+function setVolsCount(n){ n=Math.max(0,Math.min(80,Number(n)||0));
+  const v=editorDraft.vols||(editorDraft.vols=[]);
+  while(v.length<n) v.push(blankVol(v.length));
+  if(v.length>n) v.length=n;
 }
-function childrenValues(){ return $$('#e_children .ci input').map(i=>i.value.trim()); }
-let childFileInput=null;
-function pickChildCover(i){
-  if(!childFileInput){ childFileInput=document.createElement('input'); childFileInput.type='file'; childFileInput.accept='image/*'; }
-  childFileInput.onchange=()=>{ const f=childFileInput.files[0]; if(!f) return;
+function volField(i,f,label,inner,full){ return `<div class="vf ${full?'vfull':''}"><div class="vf-l"><label>${label}</label>`+
+  `<button type="button" class="copyall" data-i="${i}" data-f="${f}" title="Copiar este valor para todos os volumes">copiar p/ todos</button></div>${inner}</div>`; }
+function volPanelHTML(v,i,withCover){
+  const owned = v.status==='biblioteca';
+  const cov = withCover ? `<div class="vp-cover" data-ci="${i}">${v.imagem?`<img src="${esc(v.imagem)}">`:'<span class="cadd">+ capa</span>'}</div>` : '';
+  let body='';
+  if(v._open){
+    body = `<div class="vp-body">
+      ${volField(i,'roteirista','Roteirista',`<input type="text" data-i="${i}" data-f="roteirista" value="${esc(v.roteirista||'')}" list="dlAutores">`)}
+      ${volField(i,'desenhista','Desenhista',`<input type="text" data-i="${i}" data-f="desenhista" value="${esc(v.desenhista||'')}" list="dlAutores">`)}
+      ${volField(i,'ano','Ano',`<input type="number" data-i="${i}" data-f="ano" value="${esc(v.ano||'')}" placeholder="ex.: 2020">`)}
+      ${volField(i,'status','Status',`<div class="switch mini vstatus" data-i="${i}"><button type="button" data-v="wishlist" class="${!owned?'on':''}">Quero</button><button type="button" data-v="biblioteca" class="${owned?'on':''}">Tenho</button></div>`)}
+      ${!owned?volField(i,'urgencia','Urgência',`<label class="urgchk mini ${v.urgencia?'on':''}"><input type="checkbox" data-i="${i}" data-f="urgencia" ${v.urgencia?'checked':''}> Urgente ⚠️</label>`):''}
+      ${owned?volField(i,'valorPago','Valor pago',`<input type="text" data-i="${i}" data-f="valorPago" inputmode="numeric" value="${v.valorPago?fmtBRL(v.valorPago):''}" placeholder="R$ 0,00">`):''}
+      ${owned?volField(i,'lido','Lido',`<div class="switch mini vlido" data-i="${i}"><button type="button" data-v="1" class="${v.lido?'on':''}">Sim</button><button type="button" data-v="0" class="${!v.lido?'on':''}">Não</button></div>`):''}
+      ${owned?volField(i,'nota','Nota',`<div class="editstars mini vstars" data-i="${i}">${[1,2,3,4,5].map(n=>`<span class="st ${v.nota>=n?'full':(v.nota>=n-0.5?'half':'')}" data-n="${n}">★</span>`).join('')}<button type="button" class="clr vclr" data-i="${i}">limpar</button></div>`,true):''}
+    </div>`;
+  }
+  const tag = owned?'<span class="vp-tag tenho">Tenho</span>':'<span class="vp-tag quero">Quero</span>';
+  return `<div class="vp ${v._open?'open':''}">
+    <div class="vp-head" data-toggle="${i}">
+      ${cov}<span class="vp-num">${i+1}</span>
+      <input type="text" class="vp-nome" data-i="${i}" data-f="nome" value="${esc(v.nome||'')}" placeholder="Vol. ${i+1}">
+      ${tag}<span class="vp-chev">${v._open?'▲':'▼'}</span>
+    </div>${body}</div>`;
+}
+function renderVols(){
+  const withCover = editorDraft.tipo==='serie';
+  $('#e_children').innerHTML = (editorDraft.vols||[]).map((v,i)=>volPanelHTML(v,i,withCover)).join('');
+  bindVols();
+}
+function paintVolStars(sw,n){ sw.querySelectorAll('.st').forEach(s=>{ const v=Number(s.dataset.n);
+  s.classList.toggle('full',n>=v); s.classList.toggle('half',n>=v-0.5&&n<v); }); }
+function copyToAll(i,f){ const val=editorDraft.vols[i][f]; editorDraft.vols.forEach(v=>{ v[f]=val; });
+  renderVols(); toast('Copiado para todos os volumes.'); }
+let volFileInput=null;
+function pickVolCover(i){ if(!volFileInput){ volFileInput=document.createElement('input'); volFileInput.type='file'; volFileInput.accept='image/*'; }
+  volFileInput.onchange=()=>{ const f=volFileInput.files[0]; if(!f) return;
     if(f.size>3.4*1024*1024){ toast('Imagem grande demais (máx ~3MB).'); return; }
-    const r=new FileReader(); r.onload=()=>{ editorDraft.childCovers[i]=r.result; renderChildren($('#e_qtd').value, childrenValues(), editorDraft.childCovers); }; r.readAsDataURL(f);
-    childFileInput.value=''; };
-  childFileInput.click();
+    const r=new FileReader(); r.onload=()=>{ editorDraft.vols[i].imagem=r.result; renderVols(); }; r.readAsDataURL(f); volFileInput.value=''; };
+  volFileInput.click(); }
+function bindVols(){
+  $$('#e_children .vp-head').forEach(h=>h.onclick=e=>{ if(e.target.closest('input,button,.vp-cover')) return;
+    const i=Number(h.dataset.toggle); editorDraft.vols[i]._open=!editorDraft.vols[i]._open; renderVols(); });
+  $$('#e_children input[data-f]').forEach(inp=>{ const i=Number(inp.dataset.i), f=inp.dataset.f;
+    if(f==='urgencia'){ inp.onchange=()=>{ editorDraft.vols[i].urgencia=inp.checked; inp.closest('.urgchk').classList.toggle('on',inp.checked); }; return; }
+    if(f==='valorPago'){ inp.oninput=()=>{ inp.value=money_format(money_toNumber(inp.value)); editorDraft.vols[i].valorPago=money_toNumber(inp.value); }; return; }
+    inp.oninput=()=>{ editorDraft.vols[i][f]=inp.value; if(f==='nome'){} }; });
+  $$('#e_children .vstatus').forEach(sw=>{ const i=Number(sw.dataset.i); sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    editorDraft.vols[i].status=b.dataset.v; if(b.dataset.v==='biblioteca') editorDraft.vols[i].urgencia=false; renderVols(); }); });
+  $$('#e_children .vlido').forEach(sw=>{ const i=Number(sw.dataset.i); sw.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+    editorDraft.vols[i].lido=b.dataset.v==='1'; sw.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b)); }); });
+  $$('#e_children .vstars').forEach(sw=>{ const i=Number(sw.dataset.i);
+    sw.querySelectorAll('.st').forEach(s=>s.onclick=()=>{ const v=Number(s.dataset.n); const cur=editorDraft.vols[i].nota;
+      editorDraft.vols[i].nota=(cur===v)?v-0.5:v; paintVolStars(sw,editorDraft.vols[i].nota); });
+    sw.querySelector('.vclr').onclick=()=>{ editorDraft.vols[i].nota=0; paintVolStars(sw,0); }; });
+  $$('#e_children .vp-cover').forEach(el=>el.onclick=()=>pickVolCover(Number(el.dataset.ci)));
+  $$('#e_children .copyall').forEach(b=>b.onclick=()=>copyToAll(Number(b.dataset.i),b.dataset.f));
 }
 function setTipo(t){ editorDraft.tipo=t; setSwitch('#e_tipo',t); applyTipoUI(t); }
 function setOrigem(v){ editorDraft.origem=v; setSwitch('#e_origem',v);
@@ -1025,10 +1134,10 @@ function openEditor(id){
   $('#mDelete').style.display = o?'inline-flex':'none';
   const tipo = o ? tipoOf(o) : 'avulso';
   const origem = o ? (isImp(o)?'importado':'nacional') : 'nacional';
-  const vols = volsOf(o||{});
+  const rawVols = volsOf(o||{});
   editorDraft = { img:o?.imagem||'', imgMode:'link', urg:o?.urgencia?1:0,
     status:o?.status||'wishlist', lido:o?.lido?1:0, nota:o?.nota||0, tipo, origem,
-    childCovers: vols.map(v=>v.imagem||null) };
+    vols: rawVols.map((v,i)=>normVol(v,i,o)) };
   $('#e_nome').value=o?.nome||''; $('#e_rot').value=o?.roteirista||''; $('#e_des').value=o?.desenhista||'';
   $('#e_editora').value=edOf(o||{}); $('#e_pais').value=o?.pais||''; $('#e_ano').value=o?.ano||'';
   $('#e_img_url').value=(o?.imagem&&!o.imagem.startsWith('data:'))?o.imagem:'';
@@ -1036,8 +1145,7 @@ function openEditor(id){
   $('#e_urg').checked = editorDraft.urg===1; $('#e_urgchk').classList.toggle('on',editorDraft.urg===1);
   setSwitch('#e_status',editorDraft.status); setSwitch('#e_lido',editorDraft.lido); paintStars(editorDraft.nota);
   setOrigem(origem); setSwitch('#e_tipo',tipo);
-  // quantity + children for box/série
-  if(tipo==='box'||tipo==='serie'){ $('#e_qtd').value=vols.length||''; renderChildren(vols.length, vols.map(v=>v.nome||''), editorDraft.childCovers); }
+  if(tipo==='box'||tipo==='serie'){ $('#e_qtd').value=editorDraft.vols.length||''; }
   else { $('#e_qtd').value=''; $('#e_children').innerHTML=''; }
   applyTipoUI(tipo);
   updateOwnedBox(); updatePreview(); setImgMode('link');
@@ -1046,7 +1154,12 @@ function openEditor(id){
   setTimeout(()=>$('#e_nome').focus(),50);
 }
 function closeEditor(){ $('#overlay').classList.remove('on'); editingId=null; }
-function updateOwnedBox(){ $('#ownedBox').classList.toggle('hidden', editorDraft.status!=='biblioteca'); }
+function updateOwnedBox(){
+  const owned = editorDraft.status==='biblioteca';
+  $('#ownedBox').classList.toggle('hidden', !owned);
+  $('#urgFld').style.display = owned ? 'none' : '';
+  if(owned){ editorDraft.urg=0; $('#e_urg').checked=false; $('#e_urgchk').classList.remove('on'); }
+}
 function updatePreview(){ const img=editorDraft.img; const prev=$('#e_prev');
   if(img){ prev.src=img; prev.style.display='block'; } else { prev.removeAttribute('src'); } }
 function setImgMode(m){ editorDraft.imgMode=m; $$('#imgTabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
@@ -1063,25 +1176,28 @@ function saveEditor(){
   const tipo=editorDraft.tipo;
   const title=$('#e_nome').value.trim();
   if(!title){ toast(tipo==='box'?'Dê um título ao box.':tipo==='serie'?'Dê um título à série.':'Dê um título à obra.'); $('#e_nome').focus(); return; }
-  const origem=editorDraft.origem;
-  const editora=$('#e_editora').value.trim();
-  const shared={ roteirista:$('#e_rot').value.trim(), desenhista:$('#e_des').value.trim(),
-    origem, editora, pais:$('#e_pais').value.trim(), ano:$('#e_ano').value.trim(),
-    urgencia:editorDraft.urg===1, status:editorDraft.status,
-    valorPago:money_toNumber($('#e_valor').value),
-    lido: editorDraft.status==='biblioteca' && editorDraft.lido===1,
-    nota: editorDraft.status==='biblioteca' ? editorDraft.nota : 0 };
+  const origem=editorDraft.origem, editora=$('#e_editora').value.trim(), pais=$('#e_pais').value.trim();
   const regEd=()=>{ if(editora && !(state.editoras||[]).includes(editora)) (state.editoras=state.editoras||[]).push(editora); };
   const rec = editingId!=null ? state.obras.find(x=>x.id===editingId) : {id:nextId()};
-  // clear legacy fields
   ['editoraBR','editoraOriginal','serie','volume','serieTotal','conteudo'].forEach(k=>{ if(k in rec) delete rec[k]; });
   if(tipo==='box'||tipo==='serie'){
-    const names=childrenValues();
-    const volumes=names.map((nm,i)=>({nome:nm||`${title} — ${tipo==='serie'?'Vol.':'Livro'} ${i+1}`, imagem:(editorDraft.childCovers[i]||null)}));
-    Object.assign(rec, shared, { nome:title, tipo, volumes,
-      imagem: tipo==='serie' ? (volumes[0]&&volumes[0].imagem||null) : currentImage() });
+    const withCover = tipo==='serie';
+    const volumes=(editorDraft.vols||[]).map((v,i)=>{ const owned=v.status==='biblioteca'; return {
+      nome:(v.nome&&v.nome.trim())||('Vol. '+(i+1)), imagem: withCover?(v.imagem||null):null,
+      roteirista:v.roteirista||'', desenhista:v.desenhista||'', ano:v.ano||'',
+      status:v.status||'wishlist', urgencia: !owned && !!v.urgencia,
+      valorPago: owned?(v.valorPago||0):0, lido: owned&&!!v.lido, nota: owned?(v.nota||0):0 }; });
+    Object.assign(rec, { nome:title, tipo, origem, editora, pais, volumes,
+      imagem: tipo==='serie' ? (volumes[0]&&volumes[0].imagem||null) : currentImage(),
+      roteirista:'', desenhista:'', ano:'', status:'wishlist', urgencia:false, valorPago:0, lido:false, nota:0 });
   } else {
-    Object.assign(rec, shared, { nome:title, tipo:'avulso', imagem:currentImage() });
+    Object.assign(rec, { nome:title, tipo:'avulso', origem, editora, pais, imagem:currentImage(),
+      roteirista:$('#e_rot').value.trim(), desenhista:$('#e_des').value.trim(), ano:$('#e_ano').value.trim(),
+      status:editorDraft.status, urgencia: editorDraft.status!=='biblioteca' && editorDraft.urg===1,
+      valorPago: editorDraft.status==='biblioteca'?money_toNumber($('#e_valor').value):0,
+      lido: editorDraft.status==='biblioteca' && editorDraft.lido===1,
+      nota: editorDraft.status==='biblioteca' ? editorDraft.nota : 0 });
+    if('volumes' in rec) delete rec.volumes;
   }
   if(editingId==null) state.obras.push(rec);
   regEd(); save(); refreshOptions(); render(); closeEditor();
@@ -1103,7 +1219,9 @@ function openVols(id){
   const vols=volsOf(o);
   $('#volsBody').innerHTML = vols.map((v,i)=>{
     const cover = v.imagem?`<img src="${esc(v.imagem)}" alt="">`:`<div class="vph" style="background:${tintFor(v.nome||o.nome)}">${esc(initials(v.nome||o.nome))}</div>`;
-    return `<div class="vol-item"><div class="vcover"><span class="vnum">${i+1}</span>${cover}</div><div class="vname">${esc(v.nome||'—')}</div></div>`;
+    const st = v.status==='biblioteca'?'<span class="pill bib">Tenho</span>':'<span class="pill wl">Quero</span>';
+    const meta = `<div class="vmeta">${st}${Number(v.nota)>0?starsHTML(v.nota):''}</div>`;
+    return `<div class="vol-item"><div class="vcover"><span class="vnum">${i+1}</span>${cover}</div><div class="vname">${esc(v.nome||'—')}</div>${meta}</div>`;
   }).join('') || '<div style="padding:10px;color:var(--ink-faint)">Sem volumes cadastrados.</div>';
   $('#volsOverlay').classList.add('on');
 }
@@ -1182,7 +1300,7 @@ function bind(){
   // editor internal
   $('#e_tipo').querySelectorAll('button').forEach(b=>b.onclick=()=>setTipo(b.dataset.v));
   $('#e_origem').querySelectorAll('button').forEach(b=>b.onclick=()=>setOrigem(b.dataset.v));
-  $('#e_qtd').addEventListener('input',()=>renderChildren($('#e_qtd').value));
+  $('#e_qtd').addEventListener('input',()=>{ setVolsCount($('#e_qtd').value); renderVols(); });
   $('#e_status').querySelectorAll('button').forEach(b=>b.onclick=()=>{ editorDraft.status=b.dataset.v; setSwitch('#e_status',b.dataset.v); updateOwnedBox(); });
   $('#e_urg').addEventListener('change',e=>{ editorDraft.urg=e.target.checked?1:0; $('#e_urgchk').classList.toggle('on',e.target.checked); });
   $('#e_lido').querySelectorAll('button').forEach(b=>b.onclick=()=>{ editorDraft.lido=Number(b.dataset.v); setSwitch('#e_lido',b.dataset.v); });
