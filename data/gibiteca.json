@@ -1,6 +1,6 @@
 {
- "version": 2,
- "exported": "seed-v3",
+ "version": 1,
+ "updated": "2026-07-31T02:21:20.091Z",
  "obras": [
   {
    "id": 1,
@@ -10227,7 +10227,7 @@
    "imagem": null,
    "volumes": [
     {
-     "nome": "A Grande Odalisca — Vol. 1",
+     "nome": "A Grande Odalisca",
      "imagem": null,
      "roteirista": "Bastien Vivès",
      "desenhista": "Bastien Vivès",
@@ -10239,7 +10239,7 @@
      "nota": 0
     },
     {
-     "nome": "A Grande Odalisca — Vol. 2",
+     "nome": "Olympia",
      "imagem": null,
      "roteirista": "Bastien Vivès",
      "desenhista": "Bastien Vivès",
@@ -10251,8 +10251,8 @@
      "nota": 0
     }
    ],
-   "origem": "importado",
-   "editora": "",
+   "origem": "nacional",
+   "editora": "Pipoca & Nanquim",
    "pais": "França",
    "roteirista": "",
    "desenhista": "",
