@@ -10,6 +10,7 @@
   --paper:#F4F0E6; --paper-2:#EBE5D4; --paper-3:#E1DAC4;
   --ink:#23271C; --ink-soft:#565b48; --ink-faint:#8a8d78;
   --moss:#4B5D3A; --moss-2:#5E7146; --moss-3:#879266; --moss-line:#c4cbaf;
+  --surface:#fff; --surface-2:#fbfcf7;
   --rust:#9C4A2E; --gold:#B0862B;
   --shadow:0 1px 0 rgba(35,39,28,.04), 0 8px 24px -14px rgba(35,39,28,.35);
   --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
@@ -117,8 +118,8 @@ button svg{flex:none}
 .tut-steps li::marker{color:var(--moss);font-weight:800}
 
 /* segmented status */
-.segs{display:inline-flex;border:1.5px solid var(--moss-line);border-radius:var(--r);overflow:hidden;background:#fff}
-.segs button{border:0;background:transparent;padding:9px 12px;font-size:13px;font-weight:600;color:var(--ink-soft)}
+.segs{display:flex;align-items:stretch;width:100%;min-height:42px;border:1.5px solid var(--moss-line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.segs button{flex:1;border:0;background:transparent;padding:0 8px;font-size:13px;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap;line-height:1.1}
 .segs button.on{background:var(--moss);color:#fff}
 
 /* filters popup body */
@@ -272,8 +273,8 @@ td.tt{font-family:var(--serif);font-size:15px}
 .mfoot{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:16px 20px;border-top:1.5px solid var(--ink)}
 .mfoot .btn{flex:0 1 auto}
 .mfoot .del{margin-right:auto;color:var(--rust);border-color:#e0c3b6}
-.switch{display:inline-flex;border:1.5px solid var(--moss-line);border-radius:9px;overflow:hidden;min-height:42px}
-.switch button{border:0;background:#fff;padding:0 16px;font-size:13px;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;justify-content:center}
+.switch{display:flex;width:100%;align-items:stretch;border:1.5px solid var(--moss-line);border-radius:9px;overflow:hidden;min-height:42px}
+.switch button{flex:1;border:0;background:var(--surface);padding:0 10px;font-size:13px;font-weight:600;color:var(--ink-soft);display:flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap;line-height:1.1}
 .switch button.on{background:var(--moss);color:#fff}
 .switch.urg button.on{background:var(--rust)}
 .switch.tipo{display:flex;width:100%}
@@ -310,7 +311,12 @@ td.tt{font-family:var(--serif);font-size:15px}
 .tbadge svg{width:11px;height:11px}
 .cover.clickable,.cbody.clickable{cursor:pointer}
 .card .edit{display:none}
-.vols-body{padding:18px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:14px;max-height:70vh;overflow:auto}
+.vols-body{padding:18px 20px;max-height:72vh;overflow:auto}
+.vols-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:14px}
+.vols-summary{margin-bottom:14px;font-size:13px;color:var(--ink-soft)}
+.vols-summary b{color:var(--ink)}
+.vols-prog{height:7px;border-radius:99px;background:var(--paper-3);overflow:hidden;margin-top:7px}
+.vols-prog span{display:block;height:100%;background:var(--moss);border-radius:99px;transition:width .5s cubic-bezier(.2,.7,.3,1)}
 .vol-item{display:flex;flex-direction:column;gap:7px}
 .vol-item .vcover{aspect-ratio:1/1;border-radius:8px;overflow:hidden;border:1.5px solid var(--moss-line);background:#fff;position:relative;padding:6px;display:flex;align-items:center;justify-content:center}
 .vol-item .vcover img{max-width:100%;max-height:100%;width:auto;height:auto;display:block;border-radius:4px}
@@ -356,6 +362,60 @@ td.tt{font-family:var(--serif);font-size:15px}
 .rh-x{display:flex;gap:5px;margin-top:6px}
 .rh-xl{flex:1;text-align:center;font-size:9px;color:var(--ink-faint)}
 @media(max-width:560px){.rh-xl{font-size:8px}.rh-cols{gap:3px}}
+/* new features */
+.fhint{font-size:11px;color:var(--ink-faint);margin-top:6px;line-height:1.4}
+.fld textarea{padding:10px 12px;border:1.5px solid var(--moss-line);border-radius:9px;background:var(--surface);font-size:14px;color:var(--ink);width:100%;resize:vertical;font-family:inherit;line-height:1.5}
+.prog{margin:8px 0 2px}
+.prog-bar{height:6px;border-radius:99px;background:var(--paper-3);overflow:hidden}
+.prog-bar span{display:block;height:100%;background:var(--moss);border-radius:99px;transition:width .5s cubic-bezier(.2,.7,.3,1)}
+.prog .miss{display:block;margin-top:4px;font-size:10.5px;color:var(--rust);font-weight:600}
+.prog .complete{display:block;margin-top:4px;font-size:10.5px;color:var(--moss);font-weight:700}
+.tagrow{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.tagchip{font-size:9.5px;font-weight:600;text-transform:lowercase;letter-spacing:.02em;padding:2px 8px;border-radius:99px;background:var(--paper-2);color:var(--ink-soft);border:1px solid var(--moss-line)}
+.tagchip.more{background:none;border-color:transparent;color:var(--ink-faint)}
+.noteic{font-size:11px;color:var(--gold);margin-left:6px;vertical-align:middle}
+.genre-open{width:100%;padding:11px 14px;border:1.5px dashed var(--moss-line);border-radius:9px;background:var(--surface);color:var(--moss);font-weight:600;font-size:13.5px;cursor:pointer;text-align:center;transition:background .15s,border-color .15s}
+.genre-open:hover{border-color:var(--moss);background:var(--paper-2)}
+.genre-sel{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.genre-sel:empty{display:none}
+.gtag{font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--moss);color:#fff}
+.genre-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:48px;gap:8px;padding:18px 20px;max-height:62vh;overflow:auto}
+.genre-grid .gchip{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.12;padding:2px 6px;border:1.5px solid var(--moss-line);background:var(--surface);color:var(--ink-soft);border-radius:9px;font-size:11.5px;font-weight:600;cursor:pointer;transition:background .12s ease,color .12s ease,border-color .12s ease}
+.genre-grid .gchip:hover{border-color:var(--moss)}
+.genre-grid .gchip.on{background:var(--moss);color:#fff;border-color:var(--moss)}
+@media(max-width:560px){.genre-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:46px}}
+.lst-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.ltag{font-size:9.5px;font-weight:600;padding:2px 7px;border-radius:99px;background:var(--paper-2);color:var(--ink-soft);border:1px solid var(--moss-line);white-space:nowrap}
+.toolbtn.active{background:var(--moss);color:#fff;border-color:var(--moss)}
+.toolbtn.active svg{color:#fff}
+.onlyicon{padding-left:11px;padding-right:11px}
+/* dark theme */
+html[data-theme="dark"]{
+  --paper:#15180f; --paper-2:#1e2217; --paper-3:#2c3122;
+  --ink:#ECE7D8; --ink-soft:#c3bfae; --ink-faint:#8f8b7a;
+  --moss:#8fae63; --moss-2:#7a9850; --moss-line:#343b28;
+  --surface:#1e2217; --surface-2:#252a1c;
+  --gold:#d6a94a; --rust:#d07a52; }
+html[data-theme="dark"] body{background:var(--paper)}
+html[data-theme="dark"] .card,html[data-theme="dark"] .stat,html[data-theme="dark"] .vp,html[data-theme="dark"] .modal,html[data-theme="dark"] .menu{background:var(--surface)}
+html[data-theme="dark"] .cover,html[data-theme="dark"] .vol-item .vcover,html[data-theme="dark"] .search.big input,html[data-theme="dark"] .vp-nome,html[data-theme="dark"] .vf input,html[data-theme="dark"] .fld input,html[data-theme="dark"] .fld select,html[data-theme="dark"] .fld textarea,html[data-theme="dark"] .switch button,html[data-theme="dark"] .urgchk{background:var(--surface-2)}
+html[data-theme="dark"] .vp-head{background:var(--surface)}
+html[data-theme="dark"] .switch button.on{background:var(--moss);color:#15180f}
+html[data-theme="dark"] .tagchip{background:var(--surface-2)}
+html[data-theme="dark"] .prog-bar,html[data-theme="dark"] .vols-prog,html[data-theme="dark"] .rh-bar.zero{background:var(--paper-3)}
+html[data-theme="dark"] .brand img{filter:invert(1)}
+/* floating theme button */
+.theme-fab{position:fixed;right:18px;bottom:18px;z-index:70;width:48px;height:48px;border-radius:50%;
+  border:1.5px solid var(--moss-line);background:var(--surface);color:var(--ink);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -10px rgba(0,0,0,.45);
+  transition:transform .15s ease,background .2s ease,box-shadow .2s ease}
+.theme-fab:hover{transform:translateY(-2px) scale(1.04)}
+.theme-fab:active{transform:scale(.94)}
+.theme-fab svg{width:21px;height:21px}
+.theme-fab .ic-sun{display:none}
+html[data-theme="dark"] .theme-fab .ic-moon{display:none}
+html[data-theme="dark"] .theme-fab .ic-sun{display:block;color:var(--gold)}
+@media(max-width:560px){.theme-fab{right:14px;bottom:14px;width:44px;height:44px}}
 
 /* toast */
 .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;
@@ -547,6 +607,7 @@ td.tt{font-family:var(--serif);font-size:15px}
       <div class="field"><label>Editora</label><select id="fEditora"></select></div>
       <div class="field"><label>País</label><select id="fPais"></select></div>
       <div class="field"><label>Autor</label><select id="fAutor"></select></div>
+      <div class="field"><label>Gênero / tag</label><select id="fGenero"></select></div>
       <div class="field"><label>Ordenar por</label><select id="fSort">
         <option value="nome">Título (A–Z)</option><option value="editora">Editora (A–Z)</option>
         <option value="autor">Autor (A–Z)</option>
@@ -555,11 +616,16 @@ td.tt{font-family:var(--serif);font-size:15px}
         <option value="recent">Adicionados por último</option>
       </select></div>
       <div class="field"><label>Ordem</label><select id="fDir"><option value="asc">Crescente</option><option value="desc">Decrescente</option></select></div>
+      <div class="field"><label>Leitura</label>
+        <div class="segs full" id="leituraSeg">
+          <button data-s="todos" class="on">Todos</button>
+          <button data-s="lido">Lidos</button>
+          <button data-s="naolido">Não lidos</button>
+        </div>
+      </div>
       <div class="chkrow">
         <label class="chk" id="cImport"><input type="checkbox" id="fImport"> Importados</label>
         <label class="chk" id="cUrg"><input type="checkbox" id="fUrg"> Urgentes</label>
-        <label class="chk" id="cLido"><input type="checkbox" id="fLido"> Lidos</label>
-        <label class="chk" id="cNaoLido"><input type="checkbox" id="fNaoLido"> Não lidos</label>
       </div>
     </div>
     <div class="mfoot">
@@ -577,6 +643,15 @@ td.tt{font-family:var(--serif);font-size:15px}
       <h3>Painel da coleção</h3><button class="x" id="statsClose">×</button>
     </div>
     <div class="statswrap"><div id="statsBody"></div></div>
+  </div>
+</div>
+
+<!-- genre picker popup -->
+<div class="overlay" id="genreOverlay">
+  <div class="modal" role="dialog" aria-modal="true" style="max-width:560px">
+    <div class="mh"><h3>Gêneros</h3><button class="x" id="genreClose">×</button></div>
+    <div class="genre-grid" id="genreGrid"></div>
+    <div class="mfoot"><button class="btn ghost" id="genreClear" style="margin-right:auto">Limpar</button><button class="btn primary" id="genreDone">Concluir</button></div>
   </div>
 </div>
 
@@ -628,19 +703,20 @@ td.tt{font-family:var(--serif);font-size:15px}
       <div class="fld half"><label id="lblEditora">Editora no Brasil</label>
         <input type="text" id="e_editora" list="dlEditoras" placeholder="Nome da editora">
       </div>
-      <div class="fld half"><label>País</label><input type="text" id="e_pais" list="dlPaises"></div>
+      <div class="fld half"><label id="lblPais">País de origem</label><input type="text" id="e_pais" list="dlPaises"></div>
+      <div class="fld full"><label>Gêneros</label>
+        <button type="button" class="genre-open" id="e_genresBtn">Selecionar gêneros</button>
+        <div class="genre-sel" id="e_genresSel"></div>
+      </div>
 
       <div class="fld full" id="capaField">
         <label>Capa</label>
-        <div class="tabsmini" id="imgTabs">
-          <button data-m="link" class="on">Por link</button>
-          <button data-m="upload">Enviar arquivo</button>
-        </div>
         <div class="imgrow">
           <img class="imgprev" id="e_prev" alt="">
           <div style="flex:1">
-            <input type="text" id="e_img_url" placeholder="https://… (URL da imagem)">
+            <button type="button" class="btn ghost" id="e_img_btn" style="width:100%;justify-content:center">Enviar imagem…</button>
             <input type="file" id="e_img_file" accept="image/*" style="display:none">
+            <div class="fhint">A imagem fica salva junto no seu backup.</div>
           </div>
         </div>
       </div>
@@ -652,8 +728,8 @@ td.tt{font-family:var(--serif);font-size:15px}
         <div class="children" id="e_children"></div>
       </div>
 
-      <div class="fld half avulsoOnly"><label>Roteirista</label><input type="text" id="e_rot" list="dlAutores"></div>
-      <div class="fld half avulsoOnly"><label>Desenhista</label><input type="text" id="e_des" list="dlAutores" placeholder="Use / para dois nomes"></div>
+      <div class="fld half avulsoOnly"><label>Autor / Roteirista</label><input type="text" id="e_rot" list="dlAutores"></div>
+      <div class="fld half avulsoOnly"><label>Desenhista / Arte finalista / Colorista</label><input type="text" id="e_des" list="dlAutores" placeholder="Use / para separar nomes"></div>
 
       <div class="full pair2 avulsoOnly">
         <div class="fld"><label>Status</label>
@@ -675,6 +751,9 @@ td.tt{font-family:var(--serif);font-size:15px}
             <button class="clr" id="clrStars">limpar</button>
           </div>
         </div>
+      </div>
+      <div class="fld full"><label>Anotações / resenha</label>
+        <textarea id="e_resenha" rows="3" placeholder="Escreva aqui…"></textarea>
       </div>
     </div>
     <div class="mfoot">
@@ -784,9 +863,14 @@ td.tt{font-family:var(--serif);font-size:15px}
 <datalist id="dlEditoras"></datalist>
 <datalist id="dlAutores"></datalist>
 <datalist id="dlPaises"></datalist>
+<datalist id="dlTags"></datalist>
 <datalist id="dlSeries"></datalist>
 <input type="file" id="importFile" accept="application/json,.json" style="display:none">
 <div class="toast" id="toast"></div>
+<button class="theme-fab" id="themeFab" title="Modo claro/escuro" aria-label="Alternar tema">
+  <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+</button>
 
 <script>
 const SEED = {"obras": [], "editoras": ["2000 AD / Rebellion", "Abrams ComicArts", "Abril", "AfterShock", "Akita Shoten", "Aleph", "Ankama", "Archie Comics", "Astiberri", "AVEC Editora", "Balão Editorial", "Bamboo", "Bang! Ediciones", "Bao Publishing", "Bendito Editora", "Black Mask Studios", "BOOM! Studios", "Brasa", "Carlsen Comics", "Casterman", "Coconino Press", "Comix Zone", "Companhia das Letras", "Conrad", "Cornélius", "Dargaud", "Dark Horse Comics", "DarkSide", "DC Comics", "Devir", "Draco", "Drawn & Quarterly", "Dupuis", "Dynamite Entertainment", "Eaglemoss", "EBAL", "ECC Ediciones", "Ediciones de la Flor", "Ediouro", "Editora Globo", "Estúdio Voo", "Fantagraphics", "Figura", "First Second", "Futabasha", "Futuropolis", "Fábrica de Quadrinhos", "Gallimard BD", "Gato Amarelo", "Glénat", "Hakusensha", "HQueria", "Humanoids", "IDW Publishing", "Image Comics", "Intrínseca", "JBC", "Jupati Books", "Kadokawa", "Kana", "Kimera", "Kodansha", "Kodansha USA", "L&PM", "L'Association", "La Cúpula", "Le Lombard", "Les Humanoïdes Associés", "Lote 42", "Marsupial", "Marvel Comics", "MG Quadrinhos", "Mino", "Mythos", "Nemo", "NewPOP", "Norma Editorial", "Nova Sampa", "Numa Editora", "Oni Press", "Panini", "Panini Comics", "Peirópolis", "Pika Édition", "Pipoca & Nanquim", "Piticas", "Pixel", "Planeta Cómic", "Pólen", "QS Comics", "Quadrinhos na Cia.", "Record", "Retina 78", "Risco", "Rue de Sèvres", "Salvat", "Sapo Comics", "Seguinte", "Sergio Bonelli Editore", "SESI-SP", "Seven Seas Entertainment", "Shogakukan", "Shueisha", "Skript", "Skybound", "Soleil", "Square Enix", "Star Comics", "Suma", "Taverna do Rei", "Titan Comics", "Todavia", "Tokyopop", "Top Shelf", "Trem Fantasma", "Tábula", "Ugra Press", "Valiant", "Vault Comics", "Veneta", "Vermelho Marinho", "Vertical", "Vertigo", "Viz Media", "WMF Martins Fontes", "Yen Press", "Zarabatana Books", "Éditions Delcourt"]};
@@ -795,7 +879,7 @@ const PLACEHOLDER_TINTS = ['#4B5D3A','#5E7146','#6b6a3a','#7a6a48','#556b5a','#4
 
 /* ---------- state ---------- */
 let state = { obras:[], editoras:[], view:'galeria',
-  filters:{q:'',status:'todos',tipo:'',editora:'',pais:'',autor:'',importado:false,urgencia:false,lido:false,naoLido:false},
+  filters:{q:'',status:'todos',tipo:'',editora:'',pais:'',autor:'',genero:'',importado:false,urgencia:false,leitura:'todos'},
   sort:{by:'nome',dir:'asc'} };
 let editingId = null;
 let editorDraft = { img:'', imgMode:'link', urg:0, status:'wishlist', lido:0, nota:0 };
@@ -846,6 +930,21 @@ function sumValor(o){ return unitsOf(o).reduce((s,u)=>s+(Number(u.valorPago)||0)
 function lidoCount(o){ return unitsOf(o).filter(u=>u.status==='biblioteca'&&u.lido).length; }
 function avgNota(o){ const r=unitsOf(o).filter(u=>Number(u.nota)>0); return r.length? Math.round(r.reduce((s,u)=>s+u.nota,0)/r.length*2)/2 : 0; }
 function statusMatch(o,want){ return unitsOf(o).some(u=>u.status===want); }
+const GENRES=['Ação','Aventura','Super-herói','Ficção científica','Fantasia','Fantasia sombria','Terror','Suspense','Mistério','Policial','Noir','Drama','Romance','Comédia','Cotidiano','Distopia','Pós-apocalíptico','Faroeste','Guerra','Histórico','Biografia','Autobiografia','Jornalismo','Infantojuvenil','Sobrenatural','Cyberpunk','Steampunk','Space opera','Esporte','Erótico','LGBTQ+','Político','Mitologia','Artes marciais','Mecha','Isekai','Zumbi','Vampiros','Musical','Shonen','Shojo','Seinen','Josei'];
+function tagsOf(o){ return Array.isArray(o.tags)?o.tags:[]; }
+function parseTags(str){ return Array.from(new Set((str||'').split(',').map(t=>t.trim()).filter(Boolean))); }
+function missingVols(o){ if(tipoOf(o)==='avulso') return [];
+  return volsOf(o).map((v,i)=>({i:i+1,own:v.status==='biblioteca'})).filter(x=>!x.own).map(x=>x.i); }
+function isReadingPile(o){ return unitsOf(o).some(u=>u.status==='biblioteca'&&!u.lido); }
+function renderGenreSummary(){ const sel=editorDraft.genres||(editorDraft.genres=[]);
+  $('#e_genresBtn').textContent = sel.length ? `Editar gêneros (${sel.length})` : 'Selecionar gêneros';
+  $('#e_genresSel').innerHTML = sel.map(g=>`<span class="gtag">${esc(g)}</span>`).join(''); }
+function renderGenreGrid(){ const sel=editorDraft.genres||(editorDraft.genres=[]);
+  $('#genreGrid').innerHTML = GENRES.map(g=>`<button type="button" class="gchip ${sel.includes(g)?'on':''}" data-g="${esc(g)}">${esc(g)}</button>`).join('');
+  $$('#genreGrid .gchip').forEach(b=>b.onclick=()=>{ const g=b.dataset.g; const i=editorDraft.genres.indexOf(g);
+    if(i>=0) editorDraft.genres.splice(i,1); else editorDraft.genres.push(g); b.classList.toggle('on'); }); }
+function openGenrePopup(){ renderGenreGrid(); $('#genreOverlay').classList.add('on'); }
+function closeGenrePopup(){ $('#genreOverlay').classList.remove('on'); renderGenreSummary(); }
 function starsHTML(n){ n=Number(n)||0; let s=''; for(let i=1;i<=5;i++){ const cls=n>=i?'full':(n>=i-0.5?'half':''); s+=`<span class="s ${cls}">★</span>`; } return `<span class="stars">${s}</span>`; }
 
 /* ---------- toast ---------- */
@@ -860,12 +959,13 @@ function passes(o){
   if(f.pais && o.pais!==f.pais) return false;
   if(f.autor && !authorsOf(o).includes(f.autor)) return false;
   if(f.importado && !isImp(o)) return false;
+  if(f.genero && !tagsOf(o).includes(f.genero)) return false;
   if(f.urgencia && !anyUrg(o)) return false;
-  if(f.lido && !unitsOf(o).some(u=>u.status==='biblioteca'&&u.lido)) return false;
-  if(f.naoLido && !unitsOf(o).some(u=>u.status==='biblioteca'&&!u.lido)) return false;
+  if(f.leitura==='lido' && !unitsOf(o).some(u=>u.status==='biblioteca'&&u.lido)) return false;
+  if(f.leitura==='naolido' && !unitsOf(o).some(u=>u.status==='biblioteca'&&!u.lido)) return false;
   if(f.q){
     const q=f.q.toLowerCase();
-    const hay=[o.nome,edOf(o),o.roteirista,o.desenhista,o.pais,volsOf(o).map(v=>v.nome+' '+(v.roteirista||'')+' '+(v.desenhista||'')).join(' ')].join(' ').toLowerCase();
+    const hay=[o.nome,edOf(o),o.roteirista,o.desenhista,o.pais,o.resenha,tagsOf(o).join(' '),volsOf(o).map(v=>v.nome+' '+(v.roteirista||'')+' '+(v.desenhista||'')).join(' ')].join(' ').toLowerCase();
     if(!hay.includes(q)) return false;
   }
   return true;
@@ -901,10 +1001,13 @@ function renderStats(){
 
   const byEd={}; O.forEach(o=>{ const k=edOf(o)||(isImp(o)?'Importado (s/ editora)':'—'); byEd[k]=(byEd[k]||0)+1; });
   const byPais={}; O.forEach(o=>{ if(o.pais){ byPais[o.pais]=(byPais[o.pais]||0)+1; } });
+  const invEd={}; O.forEach(o=>{ const v=sumValor(o); if(v>0){ const k=edOf(o)||'—'; invEd[k]=(invEd[k]||0)+v; } });
   const topEd=Object.entries(byEd).sort((a,b)=>b[1]-a[1]).slice(0,7);
   const topP=Object.entries(byPais).sort((a,b)=>b[1]-a[1]).slice(0,7);
-  const maxE=Math.max(1,...topEd.map(x=>x[1])), maxP=Math.max(1,...topP.map(x=>x[1]));
+  const topInv=Object.entries(invEd).sort((a,b)=>b[1]-a[1]).slice(0,7);
+  const maxE=Math.max(1,...topEd.map(x=>x[1])), maxP=Math.max(1,...topP.map(x=>x[1])), maxI=Math.max(1,...topInv.map(x=>x[1]));
   const bars=(arr,max)=>arr.map(([nm,v])=>`<div class="bar"><span class="nm">${esc(nm)}</span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="v">${v}</span></div>`).join('');
+  const barsMoney=(arr,max)=>arr.map(([nm,v])=>`<div class="bar"><span class="nm">${esc(nm)}</span><span class="track"><span class="fill" style="width:${Math.round(v/max*100)}%"></span></span><span class="v">${fmtBRL(v)}</span></div>`).join('');
 
   const buckets=[]; for(let v=0.5; v<=5.0001; v+=0.5) buckets.push(Math.round(v*10)/10);
   const counts=buckets.map(b=>units.filter(u=>Number(u.nota)===b).length);
@@ -930,7 +1033,8 @@ function renderStats(){
       <div class="rh-x">${labels}</div>
     </div>
     <div class="bars">
-      <div><h4>Por editora</h4>${topEd.length?bars(topEd,maxE):'<span style="color:var(--ink-faint);font-size:12px">Sem dados ainda.</span>'}</div>
+      <div><h4>Itens por editora</h4>${topEd.length?bars(topEd,maxE):'<span style="color:var(--ink-faint);font-size:12px">Sem dados ainda.</span>'}</div>
+      <div><h4>Investimento por editora</h4>${topInv.length?barsMoney(topInv,maxI):'<span style="color:var(--ink-faint);font-size:12px">Sem valores pagos ainda.</span>'}</div>
       <div><h4>Por país</h4>${topP.length?bars(topP,maxP):'<span style="color:var(--ink-faint);font-size:12px">Sem país informado ainda.</span>'}</div>
     </div>`;
 }
@@ -979,12 +1083,20 @@ function cardHTML(o,i){
   if(multi){ const v=volsOf(o); const names=v.map(x=>x.nome).filter(Boolean);
     sub = `${v.length} ${t==='box'?'livro(s)':'volume(s)'}${names.length?': '+esc(names.join(', ')):''}`; }
   else sub = `${esc(o.roteirista||o.desenhista||'—')}`;
+  // series/box progress + missing volumes
+  let progress='';
+  if(multi && total>0){ const pct=Math.round(owned/total*100); const miss=missingVols(o);
+    const missTxt = (owned<total && miss.length) ? `<span class="miss">faltam: ${miss.slice(0,8).join(', ')}${miss.length>8?'…':''}</span>` : (owned>=total?'<span class="complete">completa ✓</span>':'');
+    progress = `<div class="prog"><div class="prog-bar"><span style="width:${pct}%"></span></div>${missTxt}</div>`;
+  }
+  const noteIcon = (o.resenha&&o.resenha.trim())?'<span class="noteic" title="Tem anotação">✎</span>':'';
   return `<div class="card" style="animation-delay:${Math.min((i||0)*22,240)}ms">
     ${coverHTML(o)}
     <div class="cbody clickable" data-open="${o.id}">
       ${eyebrow}
-      <div class="t">${esc(o.nome)}</div>
+      <div class="t">${esc(o.nome)}${noteIcon}</div>
       <div class="a">${sub}</div>
+      ${progress}
       <div class="meta">${statusPill}${impPill}${extras}</div>
     </div></div>`;
 }
@@ -1021,7 +1133,7 @@ function listHTML(arr){
     const lidoCell = multi ? (owned?`${lidoCount(o)}/${owned}`:'—') : (o.status==='biblioteca'?(o.lido?'Sim':'Não'):'—');
     return `<tr data-open="${o.id}">
         <td>${thumb}</td>
-        <td class="tt">${esc(o.nome)}${urg}</td>
+        <td class="tt">${esc(o.nome)}${urg}${tagsOf(o).length?`<div class="lst-tags">${tagsOf(o).map(t=>`<span class="ltag">${esc(t)}</span>`).join('')}</div>`:''}</td>
         <td>${esc(rot)}</td>
         <td>${esc(des)}</td>
         <td>${esc(edOf(o)||(isImp(o)?'Importado':'—'))}</td>
@@ -1041,8 +1153,8 @@ function listHTML(arr){
 /* ---------- filter count + popups ---------- */
 function updateFilterCount(){
   const f=state.filters; let n=0;
-  if(f.status!=='todos')n++; if(f.tipo)n++; if(f.editora)n++; if(f.pais)n++; if(f.autor)n++;
-  if(f.importado)n++; if(f.urgencia)n++; if(f.lido)n++; if(f.naoLido)n++;
+  if(f.status!=='todos')n++; if(f.tipo)n++; if(f.editora)n++; if(f.pais)n++; if(f.autor)n++; if(f.genero)n++;
+  if(f.importado)n++; if(f.urgencia)n++; if(f.leitura!=='todos')n++;
   const b=$('#filterCount'); b.textContent=n; b.classList.toggle('on',n>0);
   $('#btnFilters').classList.toggle('active',n>0);
 }
@@ -1076,15 +1188,24 @@ function refreshOptions(){
   const eds=Array.from(new Set(state.obras.map(edOf).filter(Boolean).concat(state.editoras||[]))).sort((a,b)=>a.localeCompare(b,'pt'));
   const paises=Array.from(new Set(state.obras.map(o=>o.pais).filter(Boolean))).sort((a,b)=>a.localeCompare(b,'pt'));
   const autores=Array.from(new Set(state.obras.flatMap(authorsOf))).sort((a,b)=>a.localeCompare(b,'pt'));
+  const tags=Array.from(new Set(state.obras.flatMap(tagsOf))).sort((a,b)=>a.localeCompare(b,'pt'));
+  const tagSug=Array.from(new Set(tags.concat(GENRES))).sort((a,b)=>a.localeCompare(b,'pt'));
   $('#fEditora').innerHTML = `<option value="">Todas</option>`+eds.map(e=>`<option>${esc(e)}</option>`).join('');
   $('#fPais').innerHTML = `<option value="">Todos</option>`+paises.map(p=>`<option>${esc(p)}</option>`).join('');
   $('#fAutor').innerHTML = `<option value="">Todos</option>`+autores.map(a=>`<option>${esc(a)}</option>`).join('');
+  $('#fGenero').innerHTML = `<option value="">Todos</option>`+tags.map(t=>`<option>${esc(t)}</option>`).join('');
   $('#dlEditoras').innerHTML = eds.map(e=>`<option value="${esc(e)}">`).join('');
   $('#dlAutores').innerHTML = autores.map(a=>`<option value="${esc(a)}">`).join('');
   $('#dlPaises').innerHTML = paises.map(p=>`<option value="${esc(p)}">`).join('');
+  $('#dlTags').innerHTML = tagSug.map(t=>`<option value="${esc(t)}">`).join('');
   $('#fEditora').value=state.filters.editora; $('#fPais').value=state.filters.pais; $('#fAutor').value=state.filters.autor;
-  $('#fTipo').value=state.filters.tipo||'';
+  $('#fGenero').value=state.filters.genero||''; $('#fTipo').value=state.filters.tipo||'';
 }
+
+/* ---------- pile & theme ---------- */
+function applyTheme(t){ document.documentElement.setAttribute('data-theme', t==='dark'?'dark':'light'); }
+function toggleTheme(){ const dark=document.documentElement.getAttribute('data-theme')!=='dark';
+  applyTheme(dark?'dark':'light'); try{ localStorage.setItem('gibiteca_theme', dark?'dark':'light'); }catch(e){} }
 
 /* ---------- editor ---------- */
 function setSwitch(sel,val){ $$(sel+' button').forEach(b=>b.classList.toggle('on', b.dataset.v==String(val))); }
@@ -1126,8 +1247,8 @@ function volPanelHTML(v,i,withCover){
   let body='';
   if(v._open){
     body = `<div class="vp-body">
-      ${volField(i,'roteirista','Roteirista',`<input type="text" data-i="${i}" data-f="roteirista" value="${esc(v.roteirista||'')}" list="dlAutores">`)}
-      ${volField(i,'desenhista','Desenhista',`<input type="text" data-i="${i}" data-f="desenhista" value="${esc(v.desenhista||'')}" list="dlAutores">`)}
+      ${volField(i,'roteirista','Autor / Roteirista',`<input type="text" data-i="${i}" data-f="roteirista" value="${esc(v.roteirista||'')}" list="dlAutores">`)}
+      ${volField(i,'desenhista','Desenhista / Arte finalista / Colorista',`<input type="text" data-i="${i}" data-f="desenhista" value="${esc(v.desenhista||'')}" list="dlAutores">`)}
       ${volField(i,'status','Status',`<div class="switch mini vstatus" data-i="${i}"><button type="button" data-v="wishlist" class="${!owned?'on':''}">Quero</button><button type="button" data-v="biblioteca" class="${owned?'on':''}">Tenho</button></div>`)}
       ${!owned?volField(i,'urgencia','Urgência',`<label class="urgchk mini ${v.urgencia?'on':''}"><input type="checkbox" data-i="${i}" data-f="urgencia" ${v.urgencia?'checked':''}> Urgente ⚠️</label>`):''}
       ${owned?volField(i,'valorPago','Valor pago',`<input type="text" data-i="${i}" data-f="valorPago" inputmode="numeric" value="${v.valorPago?fmtBRL(v.valorPago):''}" placeholder="R$ 0,00">`):''}
@@ -1178,12 +1299,9 @@ function bindVols(){
 }
 function setTipo(t){ editorDraft.tipo=t; setSwitch('#e_tipo',t); applyTipoUI(t); }
 function setOrigem(v){ editorDraft.origem=v; setSwitch('#e_origem',v);
-  $('#lblEditora').textContent = v==='importado'?'Editora gringa':'Editora no Brasil'; }
-function currentImage(){
-  if(editorDraft.imgMode==='link'){ const u=$('#e_img_url').value.trim(); if(u) return u;
-    if(editorDraft.img&&editorDraft.img.startsWith('data:')) return editorDraft.img; return null; }
-  return editorDraft.img||null;
-}
+  $('#lblEditora').textContent = v==='importado'?'Editora gringa':'Editora no Brasil';
+  $('#lblPais').textContent = v==='importado'?'País da edição':'País de origem'; }
+function currentImage(){ return editorDraft.img||null; }
 
 function openEditor(id){
   editingId=id;
@@ -1198,7 +1316,7 @@ function openEditor(id){
     vols: rawVols.map((v,i)=>normVol(v,i,o)) };
   $('#e_nome').value=o?.nome||''; $('#e_rot').value=o?.roteirista||''; $('#e_des').value=o?.desenhista||'';
   $('#e_editora').value=edOf(o||{}); $('#e_pais').value=o?.pais||'';
-  $('#e_img_url').value=(o?.imagem&&!o.imagem.startsWith('data:'))?o.imagem:'';
+  editorDraft.genres=(Array.isArray(o?.tags)?o.tags.slice():[]); $('#e_resenha').value=o?.resenha||''; renderGenreSummary();
   $('#e_valor').value = o&&Number(o.valorPago)>0 ? money_format(o.valorPago) : '';
   $('#e_urg').checked = editorDraft.urg===1; $('#e_urgchk').classList.toggle('on',editorDraft.urg===1);
   setSwitch('#e_status',editorDraft.status); setSwitch('#e_lido',editorDraft.lido); paintStars(editorDraft.nota);
@@ -1206,7 +1324,7 @@ function openEditor(id){
   if(tipo==='box'||tipo==='serie'){ $('#e_qtd').value=editorDraft.vols.length||''; }
   else { $('#e_qtd').value=''; $('#e_children').innerHTML=''; }
   applyTipoUI(tipo);
-  updateOwnedBox(); updatePreview(); setImgMode('link');
+  updateOwnedBox(); updatePreview();
   $('#dupWarn').classList.remove('on');
   $('#overlay').classList.add('on');
   setTimeout(()=>$('#e_nome').focus(),50);
@@ -1220,9 +1338,6 @@ function updateOwnedBox(){
 }
 function updatePreview(){ const img=editorDraft.img; const prev=$('#e_prev');
   if(img){ prev.src=img; prev.style.display='block'; } else { prev.removeAttribute('src'); } }
-function setImgMode(m){ editorDraft.imgMode=m; $$('#imgTabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
-  $('#e_img_url').style.display = m==='link'?'block':'none';
-  $('#e_img_file').style.display = m==='upload'?'block':'none'; }
 
 function checkDup(){
   const nome=$('#e_nome').value.trim().toLowerCase(), ed=$('#e_editora').value.trim().toLowerCase();
@@ -1235,6 +1350,7 @@ function saveEditor(){
   const title=$('#e_nome').value.trim();
   if(!title){ toast(tipo==='box'?'Dê um título ao box.':tipo==='serie'?'Dê um título à série.':'Dê um título à obra.'); $('#e_nome').focus(); return; }
   const origem=editorDraft.origem, editora=$('#e_editora').value.trim(), pais=$('#e_pais').value.trim();
+  const tags=(editorDraft.genres||[]).slice(); const resenha=$('#e_resenha').value.trim();
   const regEd=()=>{ if(editora && !(state.editoras||[]).includes(editora)) (state.editoras=state.editoras||[]).push(editora); };
   const rec = editingId!=null ? state.obras.find(x=>x.id===editingId) : {id:nextId()};
   ['editoraBR','editoraOriginal','serie','volume','serieTotal','conteudo'].forEach(k=>{ if(k in rec) delete rec[k]; });
@@ -1245,11 +1361,11 @@ function saveEditor(){
       roteirista:v.roteirista||'', desenhista:v.desenhista||'',
       status:v.status||'wishlist', urgencia: !owned && !!v.urgencia,
       valorPago: owned?(v.valorPago||0):0, lido: owned&&!!v.lido, nota: owned?(v.nota||0):0 }; });
-    Object.assign(rec, { nome:title, tipo, origem, editora, pais, volumes,
+    Object.assign(rec, { nome:title, tipo, origem, editora, pais, tags, resenha, volumes,
       imagem: tipo==='serie' ? (volumes[0]&&volumes[0].imagem||null) : currentImage(),
       roteirista:'', desenhista:'', status:'wishlist', urgencia:false, valorPago:0, lido:false, nota:0 });
   } else {
-    Object.assign(rec, { nome:title, tipo:'avulso', origem, editora, pais, imagem:currentImage(),
+    Object.assign(rec, { nome:title, tipo:'avulso', origem, editora, pais, tags, resenha, imagem:currentImage(),
       roteirista:$('#e_rot').value.trim(), desenhista:$('#e_des').value.trim(),
       status:editorDraft.status, urgencia: editorDraft.status!=='biblioteca' && editorDraft.urg===1,
       valorPago: editorDraft.status==='biblioteca'?money_toNumber($('#e_valor').value):0,
@@ -1275,12 +1391,15 @@ function openVols(id){
   volsCurrentId=id;
   $('#volsTitle').textContent = o.nome;
   const vols=volsOf(o);
-  $('#volsBody').innerHTML = vols.map((v,i)=>{
+  const owned=vols.filter(v=>v.status==='biblioteca').length, tot=vols.length;
+  const miss=missingVols(o);
+  const summary = tot? `<div class="vols-summary">${owned>=tot?'<b>Coleção completa</b> ✓':`Tenho <b>${owned}</b> de <b>${tot}</b>`}${(owned<tot&&miss.length)?` · faltam: ${miss.join(', ')}`:''}<div class="vols-prog"><span style="width:${Math.round(owned/Math.max(1,tot)*100)}%"></span></div></div>`:'';
+  $('#volsBody').innerHTML = summary + `<div class="vols-grid">` + (vols.map((v,i)=>{
     const cover = v.imagem?`<img src="${esc(v.imagem)}" alt="">`:`<div class="vph" style="background:${tintFor(v.nome||o.nome)}">${esc(initials(v.nome||o.nome))}</div>`;
     const st = v.status==='biblioteca'?'<span class="pill bib">Tenho</span>':'<span class="pill wl">Quero</span>';
     const meta = `<div class="vmeta">${st}${Number(v.nota)>0?starsHTML(v.nota):''}</div>`;
     return `<div class="vol-item"><div class="vcover"><span class="vnum">${i+1}</span>${cover}</div><div class="vname">${esc(v.nome||'—')}</div>${meta}</div>`;
-  }).join('') || '<div style="padding:10px;color:var(--ink-faint)">Sem volumes cadastrados.</div>';
+  }).join('') || '<div style="padding:10px;color:var(--ink-faint)">Sem volumes cadastrados.</div>') + `</div>`;
   $('#volsOverlay').classList.add('on');
 }
 function closeVols(){ $('#volsOverlay').classList.remove('on'); }
@@ -1311,7 +1430,8 @@ function bind(){
   $('#mDelete').onclick=deleteObra;
   $('#overlay').onclick=e=>{ if(e.target===$('#overlay')) closeEditor(); };
   document.addEventListener('keydown',e=>{ if(e.key!=='Escape')return;
-    if($('#searchOverlay').classList.contains('on')) $('#searchOverlay').classList.remove('on');
+    if($('#genreOverlay').classList.contains('on')) closeGenrePopup();
+    else if($('#searchOverlay').classList.contains('on')) $('#searchOverlay').classList.remove('on');
     else if($('#volsOverlay').classList.contains('on')) closeVols();
     else if($('#overlay').classList.contains('on')) closeEditor();
     else if($('#filtersOverlay').classList.contains('on')) closeFilters();
@@ -1338,22 +1458,26 @@ function bind(){
   $('#fEditora').onchange=e=>{ state.filters.editora=e.target.value; render(); };
   $('#fPais').onchange=e=>{ state.filters.pais=e.target.value; render(); };
   $('#fAutor').onchange=e=>{ state.filters.autor=e.target.value; render(); };
+  $('#fGenero').onchange=e=>{ state.filters.genero=e.target.value; render(); };
   $('#fSort').onchange=e=>{ state.sort.by=e.target.value; render(); };
   $('#fDir').onchange=e=>{ state.sort.dir=e.target.value; render(); };
   $('#btnFilters').onclick=openFilters;
   $('#filtersClose').onclick=$('#filtersApply').onclick=closeFilters;
   $('#filtersOverlay').onclick=e=>{ if(e.target===$('#filtersOverlay')) closeFilters(); };
   $('#btnStats').onclick=openStats;
+  $('#themeFab').onclick=toggleTheme;
   $('#statsClose').onclick=closeStats;
   $('#statsOverlay').onclick=e=>{ if(e.target===$('#statsOverlay')) closeStats(); };
 
   const chk=(id,cid,key)=>{ $(id).onchange=e=>{ state.filters[key]=e.target.checked; $(cid).classList.toggle('on',e.target.checked); render(); }; };
-  chk('#fImport','#cImport','importado'); chk('#fUrg','#cUrg','urgencia'); chk('#fLido','#cLido','lido'); chk('#fNaoLido','#cNaoLido','naoLido');
+  chk('#fImport','#cImport','importado'); chk('#fUrg','#cUrg','urgencia');
+  $$('#leituraSeg button').forEach(b=>b.onclick=()=>{ state.filters.leitura=b.dataset.s; $$('#leituraSeg button').forEach(x=>x.classList.toggle('on',x===b)); render(); });
   $('#clearFilters').onclick=()=>{ const q=state.filters.q;
-    state.filters={q,status:'todos',tipo:'',editora:'',pais:'',autor:'',importado:false,urgencia:false,lido:false,naoLido:false};
-    $('#fImport').checked=$('#fUrg').checked=$('#fLido').checked=$('#fNaoLido').checked=false;
+    state.filters={q,status:'todos',tipo:'',editora:'',pais:'',autor:'',genero:'',importado:false,urgencia:false,leitura:'todos'};
+    $('#fImport').checked=$('#fUrg').checked=false;
     $$('.chk').forEach(c=>c.classList.remove('on')); $$('#statusSeg button').forEach((x,i)=>x.classList.toggle('on',i===0));
-    $('#fTipo').value=''; $('#fSort').value='nome'; $('#fDir').value='asc'; state.sort={by:'nome',dir:'asc'};
+    $$('#leituraSeg button').forEach((x,i)=>x.classList.toggle('on',i===0));
+    $('#fTipo').value=''; $('#fGenero').value=''; $('#fSort').value='nome'; $('#fDir').value='asc'; state.sort={by:'nome',dir:'asc'};
     refreshOptions(); render(); };
 
   const backupMenu=$('#backupMenu');
@@ -1374,8 +1498,11 @@ function bind(){
     editorDraft.nota = (cur===v) ? v-0.5 : v;   // 1st click = full, click same again = half, then alternates
     paintStars(editorDraft.nota); });
   $('#clrStars').onclick=()=>{ editorDraft.nota=0; paintStars(0); };
-  $('#imgTabs').querySelectorAll('button').forEach(b=>b.onclick=()=>setImgMode(b.dataset.m));
-  $('#e_img_url').addEventListener('input',e=>{ editorDraft.img=e.target.value.trim(); updatePreview(); });
+  $('#e_img_btn').onclick=()=>$('#e_img_file').click();
+  $('#e_genresBtn').onclick=openGenrePopup;
+  $('#genreClose').onclick=$('#genreDone').onclick=closeGenrePopup;
+  $('#genreOverlay').onclick=e=>{ if(e.target===$('#genreOverlay')) closeGenrePopup(); };
+  $('#genreClear').onclick=()=>{ editorDraft.genres=[]; renderGenreGrid(); };
   $('#e_img_file').addEventListener('change',e=>{ const f=e.target.files[0]; if(!f) return;
     if(f.size>3.2*1024*1024){ toast('Imagem grande demais (máx. ~3MB).'); return; }
     const r=new FileReader(); r.onload=()=>{ editorDraft.img=r.result; updatePreview(); }; r.readAsDataURL(f); });
@@ -1572,6 +1699,7 @@ function bindCloud(){
 }
 
 /* ---------- boot ---------- */
+try{ applyTheme(localStorage.getItem('gibiteca_theme')||'light'); }catch(e){}
 load(); loadCloud(); bind(); bindCloud(); refreshOptions(); render();
 if(cloud.connected){ setSync('ok'); pullFromCloud(); } else setSync('off');
 maybeWelcome();
