@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-08-21T14:27:52.588Z",
+ "updated": "2026-08-21T17:24:18.902Z",
  "obras": [
   {
    "id": 1,
@@ -4179,8 +4179,8 @@
    "status": "biblioteca",
    "urgencia": false,
    "valorPago": 52.7,
-   "lido": false,
-   "nota": 0
+   "lido": true,
+   "nota": 4
   },
   {
    "id": 260,
